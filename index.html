@@ -1,613 +1,471 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-  <meta charset="UTF-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta name="description" content="Stand By Solutions provides small businesses with professional IT services, automation, and secure cloud tools starting from £49/month." />
-
-  <meta name="keywords" content="Small Business IT, Microsoft 365, Power Platform, Secure Email, Business Automation, Cloud IT Support, Stand By Solutions" />
-
-  <meta name="author" content="Stand By Solutions" />
-
-  <title>Stand By Solutions | Grow. Secure. Stand By.</title>
-
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-  <script type="application/ld+json">
-
-  {
-
-    "@context": "https://schema.org",
-
-    "@type": "LocalBusiness",
-
-    "name": "Stand By Solutions",
-
-    "image": "https://standby-ni.com/logo.png",
-
-    "address": {
-
-      "@type": "PostalAddress",
-
-      "addressLocality": "Glengormley",
-
-      "addressRegion": "Newtownabbey",
-
-      "postalCode": "BT36",
-
-      "addressCountry": "GB"
-
-    },
-
-    "telephone": "07923172687",
-
-    "url": "https://standby-ni.com",
-
-    "openingHours": "By appointment only",
-
-    "email": "information@standby-ni.com"
-
-  }
-
-  </script>
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-
-  <style>
-
-    :root {
-
-      --clr-primary: #FDBA74;
-
-      --clr-primary-dark: #f97316;
-
-      --clr-gray-100: #f3f4f6;
-
-      --clr-gray-700: #FFF8F1;
-
-      --clr-gray-900: #111827;
-
-      --radius-lg: 1rem;
-
-      --radius-sm: 0.5rem;
-
-      --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body { font-family: "Inter", sans-serif; color: var(--clr-gray-900); background: #FFF8F1; line-height: 1.6; }
-
-    a { text-decoration: none; color: inherit; }
-
-    header, footer { background: #FFF8F1; }
-
-    .nav-wrapper, section, footer { max-width: 1100px; margin: 0 auto; padding: 1rem 2rem; }
-
-    nav ul { display: flex; gap: 1.5rem; }
-
-    nav li { list-style: none; }
-
-    nav a { font-weight: 600; transition: color 0.2s; }
-
-    nav a:hover { color: var(--clr-primary); }
-
-    .hero { background: #fff6e3; padding: 4rem 2rem 5rem; }
-
-    .hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; }
-
-    .hero p { font-size: 1.125rem; margin-bottom: 2rem; max-width: 700px; }
-
-    .btn-primary { background: var(--clr-primary); color: #fff; padding: 0.75rem 1.5rem; border-radius: var(--radius-sm); font-weight: 600; transition: background 0.2s; display: inline-block; }
-
-    .btn-primary:hover { background: var(--clr-primary-dark); }
-
-    .section-title { font-size: 2rem; margin-bottom: 2.5rem; }
-
-    .features, .pricing-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-
-    .feature-card, .price-card { background: #fff; border-radius: var(--radius-lg); padding: 2rem 1.5rem; box-shadow: var(--shadow-md); }
-
-    .price { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
-
-    .setup { font-size: 0.9rem; color: var(--clr-primary); margin-bottom: 1.5rem; }
-
-    .price-card ul { list-style: none; text-align: left; margin-bottom: 1.5rem; line-height: 1.8; }
-
-    footer { background: var(--clr-gray-900); color: #fff; text-align: center; }
-
-    .cookie-banner { background: #000; color: #fff; position: fixed; bottom: 0; left: 0; width: 100%; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 999; font-size: 0.875rem; }
-
-    .cookie-banner button { background: var(--clr-primary); border: none; color: #fff; padding: 0.5rem 1rem; border-radius: var(--radius-sm); cursor: pointer; }
-
-    .contact { text-align: center; }
-
-       body {
-
-      font-family: 'Inter', sans-serif;
-
-      margin: 0;
-
-      padding: 0;
-
-      background: #FFF8F1;
-
-      color: #111827;
-
-    }
-
-    header, footer {
-
-      background: #FFF8F1;
-
-      padding: 1rem 2rem;
-
-      text-align: center;
-
-    }
-
-    .container {
-
-      max-width: 1100px;
-
-      margin: 0 auto;
-
-      padding: 2rem;
-
-    }
-
-    h1 {
-
-      font-size: 2.5rem;
-
-      margin-bottom: 1rem;
-
-    }
-
-    p {
-
-      font-size: 1.125rem;
-
-      margin-bottom: 2rem;
-
-    }
-
-    .pricing-grid {
-
-      display: grid;
-
-      gap: 2rem;
-
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-    }
-
-    .price-card {
-
-      background: #fff;
-
-      padding: 2rem;
-
-      border-radius: 1rem;
-
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-
-      text-align: left;
-
-      display: flex;
-
-      flex-direction: column;
-
-      justify-content: space-between;
-
-    }
-
-    .price-card h3 {
-
-      font-size: 1.5rem;
-
-      color: #f97316;
-
-    }
-
-    .price {
-
-      font-size: 2rem;
-
-      font-weight: 700;
-
-      margin: 1rem 0 0.5rem;
-
-    }
-
-    .features {
-
-      list-style: none;
-
-      padding: 0;
-
-      margin: 1rem 0 2rem;
-
-      line-height: 1.8;
-
-    }
-
-    .btn {
-
-      background: #FDBA74;
-
-      color: white;
-
-      padding: 0.75rem 1.5rem;
-
-      border-radius: 0.5rem;
-
-      font-weight: 600;
-
-      text-align: center;
-
-      text-decoration: none;
-
-    }
-
-    .note {
-
-      font-size: 0.875rem;
-
-      color: #6b7280;
-
-    }
-
-    .section-title {
-
-      font-size: 2rem;
-
-      text-align: center;
-
-      margin: 4rem 0 1.5rem;
-
-    }
-
-    .cta-sme {
-
-      background: #fff6e3;
-
-      padding: 3rem 2rem;
-
-      border-radius: 1rem;
-
-      text-align: center;
-
-      margin-top: 4rem;
-
-    }
-
-  </style>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Stand By Solutions provides small businesses with professional IT services, automation, and secure cloud tools starting from £49/month. Grow. Secure. Automate." />
+    <meta name="keywords" content="Small Business IT, Microsoft 365, Power Platform, Secure Email, Business Automation, Cloud IT Support, Stand By Solutions, IT services Northern Ireland, IT support Belfast, small business IT solutions" />
+    <meta name="author" content="Stand By Solutions" />
+    <title>Stand By Solutions | Professional IT Services for Small Businesses</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <meta property="og:title" content="Stand By Solutions | Professional IT Services for Small Businesses" />
+    <meta property="og:description" content="Stand By Solutions provides small businesses with professional IT services, automation, and secure cloud tools starting from £49/month. Grow. Secure. Automate." />
+    <meta property="og:image" content="https://standby-ni.com/logo.png" />
+    <meta property="og:url" content="https://standby-ni.com" />
+    <meta property="og:type" content="website" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Stand By Solutions",
+      "image": "https://standby-ni.com/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Glengormley",
+        "addressRegion": "Newtownabbey",
+        "postalCode": "BT36",
+        "addressCountry": "GB"
+      },
+      "telephone": "+447923172687",
+      "url": "https://standby-ni.com",
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "email": "information@standby-ni.com",
+      "priceRange": "£49+"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        :root {
+            --clr-primary: #FDBA74;
+            --clr-primary-dark: #f97316;
+            --clr-gray-100: #f3f4f6;
+            --clr-gray-700: #FFF8F1;
+            --clr-gray-900: #111827;
+            --radius-lg: 1rem;
+            --radius-sm: 0.5rem;
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        /* Universal Box-Sizing */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: "Inter", sans-serif;
+            color: var(--clr-gray-900);
+            background: var(--clr-gray-700);
+            line-height: 1.6;
+        }
+        a { text-decoration: none; color: inherit; }
+        header, footer { background: var(--clr-gray-700); } /* Consistent background */
+
+        /* Layout Containers */
+        .nav-wrapper, section, footer .footer-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+        }
+
+        /* Header and Navigation Styling */
+        header { padding: 1rem 0; }
+        nav {
+            display: flex;
+            justify-content: flex-end; /* Pushes menu items to the right */
+            align-items: center;
+        }
+        /* Removed .logo styling as the element itself is removed from HTML */
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+        nav a {
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: var(--clr-primary);
+        }
+
+        /* Hamburger Menu Styling */
+        .hamburger {
+            display: none; /* Hidden by default on larger screens */
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .hamburger .bar {
+            width: 25px;
+            height: 3px;
+            background-color: var(--clr-gray-900);
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+        .nav-menu { display: flex; }
+
+        /* Mobile Navigation Breakpoint */
+        @media (max-width: 768px) {
+            nav { justify-content: flex-end; } /* Keep hamburger to the right */
+            .hamburger { display: flex; }
+            .nav-menu {
+                display: none; /* Hide regular menu on mobile */
+                flex-direction: column;
+                position: absolute;
+                top: 60px; /* Adjust based on header height */
+                left: 0;
+                width: 100%;
+                background-color: var(--clr-gray-700);
+                box-shadow: var(--shadow-md);
+                z-index: 1000;
+                padding: 1rem 0;
+            }
+            .nav-menu.active { display: flex; } /* Show menu when active */
+            .nav-menu li {
+                text-align: center;
+                margin: 0.5rem 0;
+            }
+            .nav-menu a {
+                display: block;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #fff6e3;
+            padding: 4rem 2rem 5rem;
+            text-align: center;
+        }
+        .hero img {
+            width: clamp(100px, 50%, 250px); /* Responsive image size */
+            margin-bottom: 1.5rem;
+        }
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn-primary {
+            background: var(--clr-primary);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+        .btn-primary:hover { background: var(--clr-primary-dark); }
+
+        /* Section Titles */
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.5rem); /* Responsive font size */
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        /* Feature and Pricing Grids */
+        .features, .pricing-grid {
+            display: grid;
+            gap: 2rem; /* Space between grid items */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+            padding: 1rem 2rem; /* Padding for the entire grid container */
+        }
+        .feature-card, .price-card {
+            background: #fff;
+            border-radius: var(--radius-lg);
+            padding: 2rem 1.5rem;
+            box-shadow: var(--shadow-md);
+            display: flex; /* Flexbox for consistent card height */
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .price-card h3 {
+            font-size: 1.5rem;
+            color: var(--clr-primary-dark);
+            margin-bottom: 0.75rem;
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .price-card ul {
+            list-style: none;
+            padding: 0; /* Remove default padding */
+            text-align: left;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            flex-grow: 1; /* Allows features list to take available space */
+        }
+        .price-card ul li {
+            margin-bottom: 0.5rem;
+            word-wrap: break-word; /* Allows long words to break */
+            overflow-wrap: break-word; /* Modern equivalent */
+        }
+        .price-card ul li p { /* Targeting paragraphs inside list items */
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 0.25rem;
+            margin-bottom: 0;
+        }
+
+        .setup-fee, .additional-cost {
+            font-style: italic;
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            background: var(--clr-primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block; /* Ensure it behaves like a block for full width */
+            width: 100%; /* Make button full width within card */
+            margin-top: auto; /* Pushes button to the bottom of the flex container */
+        }
+        .btn:hover { background: var(--clr-primary-dark); }
+
+        /* Call-to-Action (CTA) Section */
+        .cta-sme {
+            background: #fff6e3;
+            padding: 3rem 2rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            margin-top: 4rem;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-sme h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+        }
+        .cta-sme p {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: var(--clr-gray-900);
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* Cookie Banner Styling */
+        .cookie-banner {
+            background: #000;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column; /* Stack items vertically on small screens */
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+            font-size: 0.875rem;
+            text-align: center;
+        }
+        .cookie-banner span { margin-bottom: 1rem; }
+        .cookie-banner button {
+            background: var(--clr-primary);
+            border: none;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            min-width: 120px;
+        }
+        @media (min-width: 769px) { /* Adjust cookie banner for larger screens */
+            .cookie-banner { flex-direction: row; }
+            .cookie-banner span {
+                margin-bottom: 0;
+                margin-right: 1rem;
+            }
+        }
+
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .mt-4 { margin-top: 4rem; }
+    </style>
 </head>
-
 <body>
-
-  <header>
-
-    <div class="nav-wrapper">
-
-      <nav>
-
-        <ul>
-
-          <li><a href="#features">Features</a></li>
-
-          <li><a href="#support">Support</a></li>
-
-          <li><a href="#contact">Consultation</a></li>
-
-          <li><a href="#pricing">Pricing</a></li>
-
-        </ul>
-
-      </nav>
-
-    </div>
-
-  </header>
-
-
-
-  <section class="hero">
-
-    <img src="/logo.png" alt="Stand By Logo" style="width:50%" />
-
-    <h1>Big Business Tech. Small Business Service.</h1>
-
-    <p>Professional email, AI-ready tools, Webpage Management, secure systems, and full support — from just <strong>£49/month</strong>. No IT team? No problem.</p>
-
-    <a href="#contact" class="btn-primary">Free 30‑Minute Consultation</a>
-
-  </section>
-
-
-
-  <section id="features">
-
-    <h2 class="section-title">Grow. Secure. Stand By.</h2>
-
-    <div class="features">
-
-      <div class="feature-card">
-
-        <h3>Web & Email Identity</h3>
-
-        <p>Look the part online with a custom website and business-class email — fully hosted and managed by us.</p>
-
-      </div>
-
-      <div class="feature-card">
-
-        <h3>Cloud Tools & Microsoft 365</h3>
-
-        <p>Access the full Microsoft 365 suite of apps including Teams, SharePoint and Copilot-ready tools to boost productivity.</p>
-
-      </div>
-
-      <div class="feature-card">
-
-        <h3>Automation & Workflows</h3>
-
-        <p>Streamline your day with smart automation using Power Automate and custom Power Apps, with assistance from our consultancy partner.</p>
-
-      </div>
-
-      <div class="feature-card">
-
-        <h3>Security & Compliance</h3>
-
-        <p>From device management with Intune to Microsoft Purview compliance tools — we keep your business secure.</p>
-
-      </div>
-
-      <div class="feature-card">
-
-        <h3>Full-Service Support</h3>
-
-        <p>We don’t just fix — we train, onboard, and support you as your remote IT partner. Always just an email away.</p>
-
-      </div>
-
-        <div class="feature-card">
-
-        <h3>Ongoing Training</h3>
-
-        <p>Regular check-ins and workshops ensure your team stays confident using new tools — and we’re always here when you need us.</p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-<div class="container" id="pricing">
-
-        <h2 class="section-title">Simple Pricing That Grows With You <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-
-            (1-10 users)
-
-        </p></h2>
-
-        <p>Everything a microbusiness needs to look professional, stay secure, and get support — starting at just
-
-            £49/month.</p> 
-
-        
-
-
-
-        <div class="pricing-grid">
-
-            <div class="price-card">
-
-                <h3>Essentials</h3>
-
-                <p class="price">£49/month</p>
-
-               <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-
-                    £299 Set up fee
-
-                </p>
-
-                <ul class="features">
-
-                    <li>Business email setup (e.g. you@yourbiz.com)</li>
-
-                    <li>Domain management + basic website (3 sections)</li>
-
-                    <li>Microsoft 365 Business Basic (Web Browser apps only)</li>
-
-                    <li>Baseline security features, Microsoft Authenticator</li>
-
-                  <li>Onboarding training</li>
-
-                      <li>M365 Support <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">(Latest Response: 3 working days)</p></li>
-
-                </ul>
-
-                <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-
-                    £25 Additional cost per user/month.
-
-                </p>
-
-                <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled"
-
-                    class="btn" target="_blank">Book a Call</a>
-
-            </div>
-
-
-
-            <div class="price-card">
-
-                <h3>Professional</h3>
-
-                <p class="price">£79/month</p>
-
-                <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-
-                    £950 Set up fee
-
-                </p>
-
-                <ul class="features">
-
-                    <li>Everything in Essentials, plus:</li>
-
-                    <li>Microsoft 365 Business Premium (All M365 Apps for Desktop)</li>
-
-                    <li>Data protection (Sensitivity Labels & DLP)</li>
-
-                    <li>SharePoint & OneDrive setup</li>
-
-                    <li>M365 Support <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">(Latest Response: 2 working days)</p></li>
-
-                    <li>Access to regular "Lunch N Learn" training sessions on M365 Apps</li>
-
-                </ul>
-
-                <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-
-                    £35 Additional cost per user/month.
-
-                </p>
-
-                <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled"
-
-                    class="btn" target="_blank">Book a Call</a>
-
-            </div>
-
-
-
-            <div class="price-card">
-
-                <h3>Premium</h3>
-
-                <p class="price">£119/month</p>
-
-               <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-
-                    £1499 Set up fee
-
-                </p>
-
-                <ul class="features">
-
-                    <li>Everything in Professional, plus:</li>
-
-                    <li>Custom App Support</li>
-
-                    <li>Automation support</li>
-
-                    <li>Personalised training sessions</li>
-
-                    <li>Device management with Intune</li>
-
-                    <li>Proactive compliance configuration (Purview)</li>
-
-                      <li>M365 Support <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">(Same Day Response)</p></li>
-
-                </ul>
-
-                <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-
-                    £55 Additional cost per user/month.
-
-                </p>
-
-                <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled"
-
-                    class="btn" target="_blank">Book a Call</a>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="cta-sme">
-
-               <section id="support">
-
-    <h2 class="section-title">We Stand By Your Business</h2>
-
-    <div class="features">
-
-      <div class="feature-card">
-
-        <h3>Microsoft Partner Expertise</h3>
-
-        <p>Leverage our CSP and Managed Partner status to get enterprise-grade features and pricing — made simple for small businesses.</p>
-
-      </div>
-
-      <div class="feature-card">
-
-        <h3>Scale With Confidence</h3>
-
-        <p>From solopreneurs to growing teams — we help you scale securely, with smart automation and process refinement every step of the way.</p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <h2>Need something tailored?</h2>
-
-  <p>We offer custom IT, automation, and development services for growing SMEs and specialist microbusinesses — including migration of legacy email accounts, file shares, and outdated systems into a secure, modern cloud environment.</p>
-
-
-
-            <p><strong>Book a call</strong> and let’s design your solution together.</p>
-
-            <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled"
-
-                class="btn" target="_blank">Book a Call</a>
-
-        </div>
-
-
-
-
-
-  <footer>
-
-    <p>&copy; 2025 Stand By Solutions – All rights reserved.</p>
-
-    <p>Grow. Secure. Automate. Stand By.</p>
-
-  </footer>
-
-
-
-  <div class="cookie-banner" id="cookie-banner">
-
-    <span>This site uses cookies to improve your experience. By using this site, you agree to our use of cookies.</span>
-
-    <button onclick="document.getElementById('cookie-banner').style.display='none'">Got it</button>
-
-  </div>
-
+    <header>
+        <div class="nav-wrapper">
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="/logo.png" alt="Stand By Solutions Logo" />
+        <h1>Big Business Tech. Small Business Service.</h1>
+        <p>Professional email, AI-ready tools, Webpage Management, secure systems, and full support — from just **£49/month**. No IT team? No problem.</p>
+        <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" target="_blank" class="btn-primary">Free 30‑Minute Consultation</a>
+    </section>
+
+    <section id="features" class="container mt-4">
+        <h2 class="section-title">Grow. Secure. Stand By.</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Web & Email Identity</h3>
+                <p>Look the part online with a custom website and business-class email — fully hosted and managed by us.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Cloud Tools & Microsoft 365</h3>
+                <p>Access the full Microsoft 365 suite of apps including Teams, SharePoint and Copilot-ready tools to boost productivity.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Automation & Workflows</h3>
+                <p>Streamline your day with smart automation using Power Automate and custom Power Apps, with assistance from our consultancy partner.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Security & Compliance</h3>
+                <p>From device management with Intune to Microsoft Purview compliance tools — we keep your business secure.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Full-Service Support</h3>
+                <p>We don’t just fix — we train, onboard, and support you as your remote IT partner. Always just an email away.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Ongoing Training</h3>
+                <p>Regular check-ins and workshops ensure your team stays confident using new tools — and we’re always here when you need us.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-4" id="pricing">
+        <h2 class="section-title">
+            Simple Pricing That Grows With You
+            <p class="additional-cost">(1-10 users)</p>
+        </h2>
+        <p class="text-center">Everything a microbusiness needs to look professional, stay secure, and get support — starting at just £49/month.</p>
+
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Essentials</h3>
+                <p class="price">£49/month</p>
+                <p class="setup-fee">£299 Set up fee</p>
+                <ul class="features">
+                    <li>Business email setup (e.g. you@yourbiz.com)</li>
+                    <li>Domain management + basic website (3 sections)</li>
+                    <li>Microsoft 365 Business Basic (Web Browser apps only)</li>
+                    <li>Baseline security features, Microsoft Authenticator</li>
+                    <li>Onboarding training</li>
+                    <li>M365 Support <p>(Latest Response: 3 working days)</p></li>
+                </ul>
+                <p class="additional-cost">£25 Additional cost per user/month.</p>
+                <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" class="btn" target="_blank">Book a Call</a>
+            </div>
+
+            <div class="price-card">
+                <h3>Professional</h3>
+                <p class="price">£79/month</p>
+                <p class="setup-fee">£950 Set up fee</p>
+                <ul class="features">
+                    <li>Everything in Essentials, plus:</li>
+                    <li>Microsoft 365 Business Premium (All M365 Apps for Desktop)</li>
+                    <li>Data protection (Sensitivity Labels & DLP)</li>
+                    <li>SharePoint & OneDrive setup</li>
+                    <li>M365 Support <p>(Latest Response: 2 working days)</p></li>
+                    <li>Access to regular "Lunch N Learn" training sessions on M365 Apps</li>
+                </ul>
+                <p class="additional-cost">£35 Additional cost per user/month.</p>
+                <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" class="btn" target="_blank">Book a Call</a>
+            </div>
+
+            <div class="price-card">
+                <h3>Premium</h3>
+                <p class="price">£119/month</p>
+                <p class="setup-fee">£1499 Set up fee</p>
+                <ul class="features">
+                    <li>Everything in Professional, plus:</li>
+                    <li>Custom App Support</li>
+                    <li>Automation support</li>
+                    <li>Personalised training sessions</li>
+                    <li>Device management with Intune</li>
+                    <li>Proactive compliance configuration (Purview)</li>
+                    <li>M365 Support <p>(Same Day Response)</p></li>
+                </ul>
+                <p class="additional-cost">£55 Additional cost per user/month.</p>
+                <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" class="btn" target="_blank">Book a Call</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-sme container mt-4" id="support">
+        <h2 class="section-title">We Stand By Your Business</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Microsoft Partner Expertise</h3>
+                <p>Leverage our CSP and Managed Partner status to get enterprise-grade features and pricing — made simple for small businesses.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Scale With Confidence</h3>
+                <p>From solopreneurs to growing teams — we help you scale securely, with smart automation and process refinement every step of the way.</p>
+            </div>
+        </div>
+        <h2 id="contact">Need something tailored?</h2>
+        <p>We offer custom IT, automation, and development services for growing SMEs and specialist microbusinesses — including migration of legacy email accounts, file shares, and outdated systems into a secure, modern cloud environment.</p>
+        <p>**Book a call** and let’s design your solution together.</p>
+        <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" class="btn" target="_blank">Book a Call</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Stand By Solutions – All rights reserved.</p>
+            <p>Grow. Secure. Automate. Stand By.</p>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookie-banner">
+        <span>This site uses cookies to improve your experience. By using this site, you agree to our use of cookies.</span>
+        <button onclick="document.getElementById('cookie-banner').style.display='none'">Got it</button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
 </body>
-
 </html>
