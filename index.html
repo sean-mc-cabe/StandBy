@@ -76,7 +76,6 @@
             justify-content: flex-end; /* Pushes menu items to the right */
             align-items: center;
         }
-        /* Removed .logo styling as the element itself is removed from HTML */
 
         nav ul {
             display: flex;
@@ -96,13 +95,13 @@
             display: none; /* Hidden by default on larger screens */
             flex-direction: column;
             cursor: pointer;
-            padding: 10px;
+            padding: 5px; /* **SLIMMER: Reduced padding** */
         }
         .hamburger .bar {
-            width: 25px;
-            height: 3px;
+            width: 20px; /* **SLIMMER: Reduced width** */
+            height: 2px; /* **SLIMMER: Reduced height** */
             background-color: var(--clr-gray-900);
-            margin: 4px 0;
+            margin: 3px 0; /* **SLIMMER: Reduced margin** */
             transition: 0.4s;
         }
         .nav-menu { display: flex; }
@@ -115,7 +114,7 @@
                 display: none; /* Hide regular menu on mobile */
                 flex-direction: column;
                 position: absolute;
-                top: 60px; /* Adjust based on header height */
+                top: 50px; /* **LESS INVASIVE: Adjusted top to be less intrusive** */
                 left: 0;
                 width: 100%;
                 background-color: var(--clr-gray-700);
@@ -178,8 +177,20 @@
             display: grid;
             gap: 2rem; /* Space between grid items */
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
-            padding: 1rem 2rem; /* Padding for the entire grid container */
+            /* **CENTERING: Removed specific padding/margin here to rely on parent** */
+            padding: 0 2rem; /* Ensure consistent horizontal padding */
+            margin: 0 auto; /* **CENTERING: Add auto margins for centering** */
+            max-width: 1100px; /* **CENTERING: Ensure it respects max-width** */
         }
+        /* **CENTERING: Important - Parent section container also needs to allow centering** */
+        section.container {
+            padding: 0; /* Remove padding if .features or .pricing-grid handle it directly */
+            max-width: 100%; /* Allow section to span full width to center child grids */
+            display: flex; /* Use flexbox to center the grid content */
+            justify-content: center; /* Center horizontally */
+        }
+
+
         .feature-card, .price-card {
             background: #fff;
             border-radius: var(--radius-lg);
@@ -338,7 +349,7 @@
     <section class="hero">
         <img src="/logo.png" alt="Stand By Solutions Logo" />
         <h1>Big Business Tech. Small Business Service.</h1>
-        <p>Professional email, AI-ready tools, Webpage Management, secure systems, and full support — from just <strong>£49/month</strong>. No IT team? No problem.</p>
+        <p>Professional email, AI-ready tools, Webpage Management, secure systems, and full support — from just **£49/month**. No IT team? No problem.</p>
         <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" target="_blank" class="btn-primary">Free 30‑Minute Consultation</a>
     </section>
 
@@ -385,10 +396,10 @@
                 <p class="price">£49/month</p>
                 <p class="setup-fee">£299 Set up fee</p>
                 <ul class="features">
-                    <li>Business email setup <p>(e.g. you@yourbiz.com)</p></li>
-                    <li>Domain management + basic website <p>(3-4 sections)</p></li>
-                    <li>Microsoft 365 Business Basic <p>(Web Browser apps only)</p></li>
-                    <li>Baseline security features</li>
+                    <li>Business email setup (e.g. you@yourbiz.com)</li>
+                    <li>Domain management + basic website (3 sections)</li>
+                    <li>Microsoft 365 Business Basic (Web Browser apps only)</li>
+                    <li>Baseline security features, Microsoft Authenticator</li>
                     <li>Onboarding training</li>
                     <li>M365 Support <p>(Latest Response: 3 working days)</p></li>
                 </ul>
@@ -402,11 +413,11 @@
                 <p class="setup-fee">£950 Set up fee</p>
                 <ul class="features">
                     <li>Everything in Essentials, plus:</li>
-                    <li>Microsoft 365 Business Premium <p>(All M365 Apps for Desktop)</p></li>
-                    <li>Data protection <p>(Sensitivity Labels & DLP)</p></li>
+                    <li>Microsoft 365 Business Premium (All M365 Apps for Desktop)</li>
+                    <li>Data protection (Sensitivity Labels & DLP)</li>
                     <li>SharePoint & OneDrive setup</li>
                     <li>M365 Support <p>(Latest Response: 2 working days)</p></li>
-                    <li>Access to "Lunch N Learn" training sessions</li>
+                    <li>Access to regular "Lunch N Learn" training sessions on M365 Apps</li>
                 </ul>
                 <p class="additional-cost">£35 Additional cost per user/month.</p>
                 <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" class="btn" target="_blank">Book a Call</a>
@@ -422,7 +433,7 @@
                     <li>Automation support</li>
                     <li>Personalised training sessions</li>
                     <li>Device management with Intune</li>
-                    <li>Proactive compliance configuration <p>(Purview)</p></li>
+                    <li>Proactive compliance configuration (Purview)</li>
                     <li>M365 Support <p>(Same Day Response)</p></li>
                 </ul>
                 <p class="additional-cost">£55 Additional cost per user/month.</p>
@@ -445,7 +456,7 @@
         </div>
         <h2 id="contact">Need something tailored?</h2>
         <p>We offer custom IT, automation, and development services for growing SMEs and specialist microbusinesses — including migration of legacy email accounts, file shares, and outdated systems into a secure, modern cloud environment.</p>
-        <p><strong>Book a call</strong> and let’s design your solution together.</p>
+        <p>**Book a call** and let’s design your solution together.</p>
         <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" class="btn" target="_blank">Book a Call</a>
     </section>
 
@@ -469,4 +480,3 @@
     </script>
 </body>
 </html>
-```
