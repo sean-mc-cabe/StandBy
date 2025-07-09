@@ -8,26 +8,6 @@
   <meta name="author" content="Stand By Solutions" />
   <title>Stand By Solutions | Grow. Secure. Stand By.</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Stand By Solutions",
-    "image": "https://standby-ni.com/logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Glengormley",
-      "addressRegion": "Newtownabbey",
-      "postalCode": "BT36",
-      "addressCountry": "GB"
-    },
-    "telephone": "07923172687",
-    "url": "https://standby-ni.com",
-    "openingHours": "By appointment only",
-    "email": "information@standby-ni.com"
-  }
-  </script>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -41,101 +21,117 @@
       --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: "Inter", sans-serif; color: var(--clr-gray-900); background: #FFF8F1; line-height: 1.6; }
-    a { text-decoration: none; color: inherit; }
-    header, footer { background: #FFF8F1; }
-    .nav-wrapper, section, footer { max-width: 1100px; margin: 0 auto; padding: 1rem 2rem; }
-    nav ul { display: flex; gap: 1.5rem; }
-    nav li { list-style: none; }
-    nav a { font-weight: 600; transition: color 0.2s; }
-    nav a:hover { color: var(--clr-primary); }
-    .hero { background: #fff6e3; padding: 4rem 2rem 5rem; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; }
-    .hero p { font-size: 1.125rem; margin-bottom: 2rem; max-width: 700px; }
-    .btn-primary { background: var(--clr-primary); color: #fff; padding: 0.75rem 1.5rem; border-radius: var(--radius-sm); font-weight: 600; transition: background 0.2s; display: inline-block; }
-    .btn-primary:hover { background: var(--clr-primary-dark); }
-    .section-title { font-size: 2rem; margin-bottom: 2.5rem; }
-    .features, .pricing-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-    .feature-card, .price-card { background: #fff; border-radius: var(--radius-lg); padding: 2rem 1.5rem; box-shadow: var(--shadow-md); }
-    .price { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .setup { font-size: 0.9rem; color: var(--clr-primary); margin-bottom: 1.5rem; }
-    .price-card ul { list-style: none; text-align: left; margin-bottom: 1.5rem; line-height: 1.8; }
-    footer { background: var(--clr-gray-900); color: #fff; text-align: center; }
-    .cookie-banner { background: #000; color: #fff; position: fixed; bottom: 0; left: 0; width: 100%; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 999; font-size: 0.875rem; }
-    .cookie-banner button { background: var(--clr-primary); border: none; color: #fff; padding: 0.5rem 1rem; border-radius: var(--radius-sm); cursor: pointer; }
-    .contact { text-align: center; }
-       body {
+    body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #FFF8F1;
-      color: #111827;
+      background: var(--clr-gray-700);
+      color: var(--clr-gray-900);
+      line-height: 1.6;
     }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; }
     header, footer {
       background: #FFF8F1;
       padding: 1rem 2rem;
       text-align: center;
     }
-    .container {
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       max-width: 1100px;
       margin: 0 auto;
-      padding: 2rem;
     }
-    h1 {
-      font-size: 2.5rem;
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+    nav a {
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--clr-primary); }
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background: var(--clr-gray-900);
+    }
+    .hero {
+      background: #fff6e3;
+      padding: 4rem 2rem 5rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
       margin-bottom: 1rem;
     }
-    p {
+    .hero p {
       font-size: 1.125rem;
       margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .pricing-grid {
+    .btn-primary, .btn {
+      background: var(--clr-primary);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover, .btn:hover {
+      background: var(--clr-primary-dark);
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .features {
       display: grid;
       gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin: 2rem 0;
     }
-    .price-card {
+    .feature-card, .price-card {
       background: #fff;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      box-shadow: var(--shadow-md);
     }
-    .price-card h3 {
-      font-size: 1.5rem;
-      color: #f97316;
+    .price-card.collapsible {
+      cursor: pointer;
+    }
+    .price-card.collapsible .price-content {
+      display: none;
+    }
+    .price-card.active .price-content {
+      display: block;
     }
     .price {
       font-size: 2rem;
       font-weight: 700;
-      margin: 1rem 0 0.5rem;
-    }
-    .features {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0 2rem;
-      line-height: 1.8;
-    }
-    .btn {
-      background: #FDBA74;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.5rem;
-      font-weight: 600;
-      text-align: center;
-      text-decoration: none;
+      margin-bottom: 0.5rem;
     }
     .note {
       font-size: 0.875rem;
       color: #6b7280;
+      margin-top: 0.5rem;
     }
-    .section-title {
-      font-size: 2rem;
-      text-align: center;
-      margin: 4rem 0 1.5rem;
+    .price-card ul {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      padding-left: 0;
     }
     .cta-sme {
       background: #fff6e3;
@@ -144,13 +140,62 @@
       text-align: center;
       margin-top: 4rem;
     }
+    .sticky-cta {
+      position: fixed;
+      bottom: 4.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--clr-primary);
+      color: white;
+      padding: 0.75rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 600;
+      z-index: 999;
+    }
+    footer {
+      background: var(--clr-gray-900);
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+    .cookie-banner {
+      background: #000;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 998;
+      font-size: 0.875rem;
+    }
+    .cookie-banner button {
+      background: var(--clr-primary);
+      border: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .menu-toggle { display: flex; }
+      nav ul { display: none; flex-direction: column; width: 100%; padding: 1rem 0; }
+      nav ul.active { display: flex; }
+      .features, .pricing-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="nav-wrapper">
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
+      </div>
       <nav>
-        <ul>
+        <ul id="nav-links">
           <li><a href="#features">Features</a></li>
           <li><a href="#support">Support</a></li>
           <li><a href="#contact">Consultation</a></li>
@@ -167,133 +212,64 @@
     <a href="#contact" class="btn-primary">Free 30‑Minute Consultation</a>
   </section>
 
-  <section id="features">
-    <h2 class="section-title">Grow. Secure. Stand By.</h2>
-    <div class="features">
-      <div class="feature-card">
-        <h3>Web & Email Identity</h3>
-        <p>Look the part online with a custom website and business-class email — fully hosted and managed by us.</p>
+  <section id="pricing" class="container">
+    <h2 class="section-title">Simple Pricing That Grows With You <span class="note">(1-10 users)</span></h2>
+    <p>Everything a microbusiness needs to look professional, stay secure, and get support — starting at just £49/month.</p>
+    <div class="pricing-grid">
+      <div class="price-card collapsible" onclick="toggleCard(this)">
+        <h3>Essentials</h3>
+        <p class="price">£49/month</p>
+        <div class="price-content">
+          <p class="note">£299 Set up fee</p>
+          <ul>
+            <li>Business email setup</li>
+            <li>Domain + website</li>
+            <li>Microsoft 365 Basic</li>
+            <li>Security setup</li>
+            <li>Support (3-day SLA)</li>
+          </ul>
+          <p class="note">£25/user/month extra</p>
+          <a href="#contact" class="btn">Book a Call</a>
+        </div>
       </div>
-      <div class="feature-card">
-        <h3>Cloud Tools & Microsoft 365</h3>
-        <p>Access the full Microsoft 365 suite of apps including Teams, SharePoint and Copilot-ready tools to boost productivity.</p>
+      <div class="price-card collapsible" onclick="toggleCard(this)">
+        <h3>Professional</h3>
+        <p class="price">£79/month</p>
+        <div class="price-content">
+          <p class="note">£950 Set up fee</p>
+          <ul>
+            <li>Includes Essentials</li>
+            <li>Microsoft 365 Premium</li>
+            <li>Data protection tools</li>
+            <li>SharePoint & OneDrive</li>
+            <li>Support (2-day SLA)</li>
+          </ul>
+          <p class="note">£35/user/month extra</p>
+          <a href="#contact" class="btn">Book a Call</a>
+        </div>
       </div>
-      <div class="feature-card">
-        <h3>Automation & Workflows</h3>
-        <p>Streamline your day with smart automation using Power Automate and custom Power Apps, with assistance from our consultancy partner.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Security & Compliance</h3>
-        <p>From device management with Intune to Microsoft Purview compliance tools — we keep your business secure.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Full-Service Support</h3>
-        <p>We don’t just fix — we train, onboard, and support you as your remote IT partner. Always just an email away.</p>
+      <div class="price-card collapsible" onclick="toggleCard(this)">
+        <h3>Premium</h3>
+        <p class="price">£119/month</p>
+        <div class="price-content">
+          <p class="note">£1499 Set up fee</p>
+          <ul>
+            <li>Includes Professional</li>
+            <li>Custom app & automation</li>
+            <li>Personalised training</li>
+            <li>Device management</li>
+            <li>Support (same day)</li>
+          </ul>
+          <p class="note">£55/user/month extra</p>
+          <a href="#contact" class="btn">Book a Call</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="support">
-    <h2 class="section-title">We Stand By Your Business</h2>
-    <div class="features">
-      <div class="feature-card">
-        <h3>Ongoing Training</h3>
-        <p>Regular check-ins and workshops ensure your team stays confident using new tools — and we’re always here when you need us.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Microsoft Partner Expertise</h3>
-        <p>Leverage our CSP and Managed Partner status to get enterprise-grade features and pricing — made simple for small businesses.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Scale With Confidence</h3>
-        <p>From solopreneurs to growing teams — we help you scale securely, with smart automation and process refinement every step of the way.</p>
-      </div>
-    </div>
-  </section>
-
-<div class="container" id="pricing">
-        <h2 class="section-title">Simple Pricing That Grows With You <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-            (1-10 users)
-        </p></h2>
-        <p>Everything a microbusiness needs to look professional, stay secure, and get support — starting at just
-            £49/month.</p> 
-        
-
-        <div class="pricing-grid">
-            <div class="price-card">
-                <h3>Essentials</h3>
-                <p class="price">£49/month</p>
-               <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-                    £299 Set up fee
-                </p>
-                <ul class="features">
-                    <li>Business email setup (e.g. you@yourbiz.com)</li>
-                    <li>Domain management + basic website (3 sections)</li>
-                    <li>Microsoft 365 Business Basic (Web Browser apps only)</li>
-                    <li>Baseline security features, Microsoft Authenticator</li>
-                      <li>M365 Support <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">(Latest Response: 3 working days)</p></li>
-                </ul>
-                <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-                    £25 Additional cost per user/month.
-                </p>
-                <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled"
-                    class="btn" target="_blank">Book a Call</a>
-            </div>
-
-            <div class="price-card">
-                <h3>Professional</h3>
-                <p class="price">£79/month</p>
-                <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-                    £950 Set up fee
-                </p>
-                <ul class="features">
-                    <li>Everything in Essentials, plus:</li>
-                    <li>Microsoft 365 Business Premium (All M365 Apps for Desktop)</li>
-                    <li>Data protection (Sensitivity Labels & DLP)</li>
-                    <li>SharePoint & OneDrive setup</li>
-                    <li>M365 Support <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">(Latest Response: 2 working days)</p></li>
-                    <li>Access to regular "Lunch N Learn" training sessions on M365 Apps</li>
-                </ul>
-                <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-                    £35 Additional cost per user/month.
-                </p>
-                <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled"
-                    class="btn" target="_blank">Book a Call</a>
-            </div>
-
-            <div class="price-card">
-                <h3>Premium</h3>
-                <p class="price">£119/month</p>
-               <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-                    £1499 Set up fee
-                </p>
-                <ul class="features">
-                    <li>Everything in Professional, plus:</li>
-                    <li>Custom App Support</li>
-                    <li>Automation support</li>
-                    <li>Personalised training sessions</li>
-                    <li>Device management with Intune</li>
-                    <li>Proactive compliance configuration (Purview)</li>
-                      <li>M365 Support <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">(Same Day Response)</p></li>
-                </ul>
-                <p style="font-style: italic; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-                    £55 Additional cost per user/month.
-                </p>
-                <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled"
-                    class="btn" target="_blank">Book a Call</a>
-            </div>
-        </div>
-
-        <div class="cta-sme">
-           <div class="cta-sme">
-  <h2>Larger Business or Need something tailored?</h2>
-  <p>We offer custom IT, automation, and development services for growing SMEs and specialist microbusinesses — including migration of legacy email accounts, file shares, and outdated systems into a secure, modern cloud environment.</p>
-
-            <p><strong>Book a call</strong> and let’s design your solution together.</p>
-            <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled"
-                class="btn" target="_blank">Book a Call</a>
-        </div>
-    </div>
+  <div class="sticky-cta">
+    <a href="#contact" style="color:white">Free Consultation</a>
+  </div>
 
   <footer>
     <p>&copy; 2025 Stand By Solutions – All rights reserved.</p>
@@ -302,7 +278,24 @@
 
   <div class="cookie-banner" id="cookie-banner">
     <span>This site uses cookies to improve your experience. By using this site, you agree to our use of cookies.</span>
-    <button onclick="document.getElementById('cookie-banner').style.display='none'">Got it</button>
+    <button onclick="hideCookieBanner()">Got it</button>
   </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("active");
+    }
+    function toggleCard(card) {
+      card.classList.toggle("active");
+    }
+    function hideCookieBanner() {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        hideCookieBanner();
+      }, 8000);
+    });
+  </script>
 </body>
 </html>
