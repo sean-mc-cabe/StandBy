@@ -317,12 +317,12 @@
 
         /* Center cards and wrap text on mobile */
 @media (max-width: 768px) {
-    .features, .pricing-grid {
+    .features {
         justify-content: center;
         text-align: center;
     }
 
-    .feature-card, .price-card {
+    .feature-card {
         margin-left: auto;
         margin-right: auto;
         word-wrap: break-word;
@@ -334,18 +334,10 @@
     .feature-card p {
         word-wrap: break-word;
         overflow-wrap: break-word;
-    }
-}
 
-/* Reduce hamburger height but maintain full width menu */
-.hamburger {
-    padding: 6px 10px; /* smaller padding */
-}
-.nav-menu {
-    width: 100%;
-}
-@media (max-width: 768px) {
-    .pricing-grid {
+    }
+
+      .pricing-grid {
     grid-template-columns: 1fr;      /* Single column on mobile */
     justify-items: center;           /* Center each card */
   }
@@ -357,8 +349,18 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     padding-bottom: 5%;
-  }
+
+    }
 }
+
+/* Reduce hamburger height but maintain full width menu */
+.hamburger {
+    padding: 6px 10px; /* smaller padding */
+}
+.nav-menu {
+    width: 100%;
+}
+
     </style>
 </head>
 <body>
