@@ -1,472 +1,2374 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Stand By Solutions provides small businesses with professional IT services, automation, and secure cloud tools. Grow. Secure. Automate." />
-  <meta name="keywords" content="Small Business IT, Microsoft 365, Power Platform, Secure Email, Business Automation, Cloud IT Support, Stand By Solutions, IT services Northern Ireland, IT support Belfast, small business IT solutions" />
-  <meta name="author" content="Stand By Solutions" />
-  <title>Stand By Solutions | Professional IT Services for Small Businesses</title>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>StandBy Solutions — Microsoft 365 AI &amp; Automation Training | Northern Ireland</title>
+<meta name="description" content="StandBy Solutions designs and deploys AI-powered automation on Microsoft 365 and delivers instructor-led training. Power Platform, Copilot Studio, and Azure OpenAI specialists based in Northern Ireland.">
+<meta name="keywords" content="Microsoft automation consultant Northern Ireland, Power Automate consultant Belfast, Microsoft 365 consultant Northern Ireland, Copilot Studio consultant UK, Power Platform training Northern Ireland, AI automation for small business Northern Ireland">
+<link rel="canonical" href="https://standby-ni.com">
+<meta property="og:title" content="StandBy Solutions — Microsoft AI &amp; Automation Consultant | Northern Ireland">
+<meta property="og:description" content="AI-powered automation and training built on Microsoft 365. Fixed-price projects. Instructor-led workshops. Based in Northern Ireland, serving the UK.">
+<meta property="og:url" content="https://standby-ni.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="StandBy Solutions — Microsoft AI &amp; Automation Consultant">
+<meta name="twitter:description" content="AI-powered automation and training built on Microsoft 365. Based in Northern Ireland.">
 
-  <meta property="og:title" content="Stand By Solutions | Professional IT Services for Small Businesses" />
-  <meta property="og:description" content="Stand By Solutions provides small businesses with professional IT services, automation, and secure cloud tools. Grow. Secure. Automate." />
-  <meta property="og:image" content="https://standby-ni.com/logo.png" />
-  <meta property="og:url" content="https://standby-ni.com" />
-  <meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<!-- LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "StandBy Solutions",
+  "description": "Microsoft ecosystem AI and automation consultancy. We design and deploy AI-powered automation solutions built on Microsoft 365 and deliver instructor-led training on AI and Modern Work tools for SMEs across Northern Ireland and the UK.",
+  "url": "https://standby-ni.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Northern Ireland",
+    "addressCountry": "GB"
+  },
+  "areaServed": ["Northern Ireland", "United Kingdom"],
+  "serviceType": ["Microsoft 365 Consulting", "Power Platform Development", "AI Automation", "Copilot Studio Development", "Microsoft Copilot Training", "Power Automate Training"],
+  "priceRange": "££",
+  "knowsAbout": ["Microsoft 365", "Power Platform", "Power Automate", "Power Apps", "Copilot Studio", "AI Builder", "Azure OpenAI", "SharePoint Online", "Dataverse"]
+}
+</script>
 
-  <style>
-    :root {
-      --clr-primary: #FDBA74;
-      --clr-primary-dark: #f97316;
-      --clr-gray-100: #f3f4f6;
-      --clr-gray-700: #FFF8F1;
-      --clr-gray-900: #111827;
-      --radius-lg: 1rem;
-      --radius-sm: 0.5rem;
-      --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-    }
+<!-- WebSite Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "StandBy Solutions",
+  "url": "https://standby-ni.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://standby-ni.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://standby-ni.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://standby-ni.com/#services" },
+    { "@type": "ListItem", "position": 3, "name": "Training", "item": "https://standby-ni.com/#training" },
+    { "@type": "ListItem", "position": 4, "name": "How It Works", "item": "https://standby-ni.com/#process" },
+    { "@type": "ListItem", "position": 5, "name": "Get a Proposal", "item": "https://standby-ni.com/#enquiry" }
+  ]
+}
+</script>
 
-    body {
-      font-family: "Inter", sans-serif;
-      color: var(--clr-gray-900);
-      background: var(--clr-gray-700);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    a { text-decoration: none; color: inherit; }
-
-    header, footer { background: var(--clr-gray-700); }
-
-    .nav-wrapper, section, footer .footer-content {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 1rem 2rem;
-    }
-
-    header { padding: 1rem 0; }
-    nav {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-    nav ul {
-      display: flex;
-      gap: 1.5rem;
-      list-style: none;
-    }
-    nav a { font-weight: 600; transition: color 0.2s; }
-    nav a:hover { color: var(--clr-primary); }
-
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      padding: 6px 10px;
-    }
-    .hamburger .bar {
-      width: 25px;
-      height: 3px;
-      background-color: var(--clr-gray-900);
-      margin: 4px 0;
-      transition: 0.4s;
-    }
-    .nav-menu { display: flex; width: 100%; }
-
-    @media (max-width: 768px) {
-      nav { justify-content: flex-end; }
-      .hamburger { display: flex; }
-      .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: var(--clr-gray-700);
-        box-shadow: var(--shadow-md);
-        z-index: 1000;
-        padding: 1rem 0;
+<!-- FAQPage Schema — uncomment when FAQ section is live
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What can Power Automate do for my business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Power Automate connects your Microsoft 365 apps and automates repetitive tasks — approval workflows, document generation, data entry, email notifications, and invoice processing. Most SMEs save 5–15 hours per week by automating their three worst manual processes. It works with Outlook, SharePoint, Teams, Forms, Excel, and over 1,000 third-party connectors."
       }
-      .nav-menu.active { display: flex; }
-      .nav-menu li { text-align: center; margin: 0.5rem 0; }
-      .nav-menu a { display: block; padding: 0.5rem 1rem; }
-    }
-
-    .hero {
-      background: #fff6e3;
-      padding: 4rem 2rem 5rem;
-      text-align: center;
-    }
-    .check {
-      padding: 4rem 2rem 5rem;
-      text-align: center;
-    }
-    .hero img {
-      width: clamp(100px, 50%, 250px);
-      margin-bottom: 1.5rem;
-    }
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: clamp(1rem, 2.5vw, 1.125rem);
-      margin-bottom: 2rem;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .btn-primary {
-      background: var(--clr-primary);
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border-radius: var(--radius-sm);
-      font-weight: 600;
-      transition: background 0.2s;
-      display: inline-block;
-    }
-    .btn-primary:hover { background: var(--clr-primary-dark); }
-
-    .section-title {
-      font-size: clamp(1.8rem, 4vw, 2.5rem);
-      margin-bottom: 2.5rem;
-      text-align: center;
-    }
-
-    .features {
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      padding: 1rem 0;
-    }
-    .feature-card {
-      background: #fff;
-      border-radius: var(--radius-lg);
-      padding: 2rem 1.5rem;
-      box-shadow: var(--shadow-md);
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-    }
-
-    /* ✅ FIXED: Pricing Grid now centers cards */
-    .pricing-grid {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      padding: 1rem 1rem;
-      justify-content: center; /* center items on wider and narrow screens */
-    }
-
-    .price-card {
-      background: #fff;
-      border-radius: var(--radius-lg);
-      padding: 2rem 1.5rem;
-      box-shadow: var(--shadow-md);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-sizing: border-box;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-    }
-
-    .price-card h3 {
-      font-size: 1.5rem;
-      color: var(--clr-primary-dark);
-      margin-bottom: 0.75rem;
-    }
-    .price { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .price-card ul {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 1.5rem;
-      line-height: 1.8;
-      flex-grow: 1;
-      text-align: left;
-    }
-    .price-card ul li { margin-bottom: 0.5rem; }
-    .price-card ul li p {
-      font-size: 0.875rem;
-      color: #6b7280;
-      margin-top: 0.25rem;
-      margin-bottom: 0;
-    }
-    .setup-fee,
-    .additional-cost {
-      font-style: italic;
-      font-size: 0.875rem;
-      color: #6b7280;
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    .btn {
-      background: var(--clr-primary);
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: var(--radius-sm);
-      font-weight: 600;
-      text-align: center;
-      display: inline-block;
-      width: 100%;
-      margin-top: auto;
-      text-decoration: none;
-    }
-    .btn:hover { background: var(--clr-primary-dark); }
-
-    /* ✅ Mobile-specific tweaks */
-    @media (max-width: 768px) {
-      .pricing-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* center in flex mode */
-        padding: 1rem;
-        margin: 0 auto;
+    },
+    {
+      "@type": "Question",
+      "name": "How much does business automation cost in the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At StandBy Solutions, fixed-price projects start at £1,500 for a focused quick-win automation. Most SMEs invest between £4,000 and £9,000 for a core automation build that delivers measurable ROI within 8–12 weeks. Larger transformation projects are scoped individually. We don't bill hourly — every project is scoped and priced upfront."
       }
-      .price-card {
-        width: 100%;
-        max-width: 360px;
-        margin-bottom: 2rem;
+    },
+    {
+      "@type": "Question",
+      "name": "Is Microsoft Copilot worth it for small business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Microsoft Copilot is worth it if your team spends significant time drafting documents, summarising emails, building presentations, or analysing data in Excel. At £25 per user per month, it pays for itself if it saves each user more than one hour per week. The key is training — most businesses that see poor ROI from Copilot simply haven't trained their staff to use it properly. That's exactly what our IGNITE and SPARK training sessions address."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Power Automate and hiring a developer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Power Automate is a low-code platform built into Microsoft 365. It lets you build automation without writing traditional code, and your team can maintain it after delivery. Hiring a developer to build custom software typically costs 3–10x more, takes longer, and creates a dependency on that developer for every change. Power Automate solutions stay inside your Microsoft tenant, are maintained through a visual interface, and benefit from Microsoft's ongoing updates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my data safe with Microsoft Copilot?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Microsoft Copilot runs inside your Microsoft 365 tenant and respects all existing permissions. It does not train on your data, does not share your data with other organisations, and is covered by Microsoft's enterprise data protection commitments. Copilot can only access files and information that the individual user already has permission to see. If your SharePoint permissions are properly configured, Copilot is as secure as the rest of your Microsoft 365 environment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Microsoft Copilot vs ChatGPT — which should my business use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Microsoft Copilot is embedded in the apps your team already uses — Outlook, Word, Excel, Teams, and SharePoint. It works with your business data securely inside your tenant. ChatGPT is a standalone tool that's powerful for general tasks but doesn't connect to your Microsoft 365 environment or respect your file permissions. For most SMEs already on Microsoft 365, Copilot is the better investment because it works where your people already work. Some businesses use both: Copilot for daily M365 work, ChatGPT or Claude for research and creative tasks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need technical knowledge to work with StandBy Solutions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Most of our clients are operations managers, finance directors, or business owners — not IT professionals. You describe the problem in plain English, and we design the solution. Our enquiry form takes under five minutes and doesn't require any technical language. We translate your business challenges into Microsoft technology solutions and explain everything in terms you can act on."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Copilot Studio and do I need it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Copilot Studio is Microsoft's platform for building custom AI agents — chatbots and virtual assistants that can answer questions, look up information, and take actions inside your business systems. You might need it if your team repeatedly answers the same questions (HR policies, IT procedures, customer queries), if you want a 24/7 front-line assistant on your website or intranet, or if you want to automate multi-step processes that currently require human decision-making. StandBy Solutions designs and builds Copilot Studio agents as part of our TRANSFORM and ELEVATE project packages."
       }
     }
+  ]
+}
+</script>
+-->
 
-    .cta-sme {
-      background: #fff6e3;
-      padding: 3rem 2rem;
-      border-radius: var(--radius-lg);
-      text-align: center;
-      margin-top: 4rem;
-      max-width: 1100px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+<style>
+/* ===== CSS CUSTOM PROPERTIES ===== */
+:root {
+  --navy: #0D1B2A;
+  --mid: #1A3A5C;
+  --orange: #E8612C;
+  --orange-hover: #C94E20;
+  --orange-light: #FDF0EA;
+  --msblue: #0078D4;
+  --cream: #FAF6F0;
+  --grey: #6B7C93;
+  --charcoal: #2C2C2C;
+  --border: #E8DDD4;
+  --white: #FFFFFF;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
 
-    .cta-sme h2 {
-      font-size: clamp(1.8rem, 4vw, 2.5rem);
-      margin-bottom: 1.5rem;
-    }
-    .cta-sme p {
-      font-size: clamp(1rem, 2.5vw, 1.125rem);
-      margin-bottom: 1.5rem;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body {
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background: var(--cream);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+ul, ol { list-style: none; }
 
-    footer {
-      background: var(--clr-gray-900);
-      color: #fff;
-      text-align: center;
-      padding: 2rem;
-      margin-top: 4rem;
-    }
-    footer p { margin-bottom: 0.5rem; font-size: 0.9rem; }
+/* ===== UTILITY ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 16px;
+}
+.section-padding { padding: 100px 0; }
+.section-padding-lg { padding: 120px 0; }
 
-    .cookie-banner {
-      background: #000;
-      color: #fff;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: 1rem 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 999;
-      font-size: 0.875rem;
-      text-align: center;
-    }
-    .cookie-banner span { margin-bottom: 1rem; }
-    .cookie-banner button {
-      background: var(--clr-primary);
-      border: none;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: var(--radius-sm);
-      cursor: pointer;
-      min-width: 120px;
-    }
-    @media (min-width: 769px) {
-      .cookie-banner { flex-direction: row; }
-      .cookie-banner span {
-        margin-bottom: 0;
-        margin-right: 1rem;
-      }
-    }
+/* ===== SCROLL ANIMATIONS ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.stagger-1 { transition-delay: 0.05s; }
+.stagger-2 { transition-delay: 0.12s; }
+.stagger-3 { transition-delay: 0.19s; }
+.stagger-4 { transition-delay: 0.26s; }
+.stagger-5 { transition-delay: 0.33s; }
 
-    .text-center { text-align: center; }
-    .mt-4 { margin-top: 2rem; }
-    .contact { padding-top:10%; }
-  </style>
+/* ===== NAVIGATION ===== */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--navy);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.nav.scrolled {
+  background: rgba(13, 27, 42, 0.97);
+  box-shadow: 0 2px 24px rgba(0,0,0,0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.nav-logo-text {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--white);
+  letter-spacing: -0.3px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.nav-links a {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.78);
+  transition: color 0.25s;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--orange);
+  transition: width 0.3s;
+}
+.nav-links a:hover { color: var(--white); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 24px;
+  background: var(--orange);
+  color: var(--white) !important;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 2px 8px rgba(232, 97, 44, 0.25);
+}
+.nav-cta::after { display: none !important; }
+.nav-cta:hover {
+  background: var(--orange-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(232, 97, 44, 0.35);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+  padding: 4px 0;
+  z-index: 1010;
+}
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.hamburger.active span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+/* Mobile nav overlay */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  right: 0;
+  background: var(--navy);
+  padding: 32px 24px 40px;
+  flex-direction: column;
+  gap: 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+  z-index: 999;
+}
+.mobile-nav.open {
+  display: flex;
+  transform: translateY(0);
+  opacity: 1;
+}
+.mobile-nav a {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.mobile-nav a:hover { color: var(--orange); }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--navy);
+  overflow: hidden;
+  padding-top: 72px;
+}
+.hero-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 30%, transparent 80%);
+}
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.hero-content { padding: 40px 0; }
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 24px;
+  opacity: 0;
+  transform: translateY(16px);
+  animation: heroFadeIn 0.7s 0.2s forwards;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 8vw, 84px);
+  color: var(--white);
+  line-height: 1.06;
+  margin-bottom: 24px;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroFadeIn 0.7s 0.35s forwards;
+}
+.hero-sub {
+  font-size: clamp(17px, 2vw, 20px);
+  color: rgba(255,255,255,0.72);
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 520px;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroFadeIn 0.7s 0.5s forwards;
+}
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroFadeIn 0.7s 0.65s forwards;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 32px;
+  background: var(--orange);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 4px 16px rgba(232, 97, 44, 0.3);
+}
+.btn-primary:hover {
+  background: var(--orange-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(232, 97, 44, 0.4);
+}
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 32px;
+  background: transparent;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  transition: all 0.25s;
+}
+.btn-secondary:hover {
+  background: var(--white);
+  color: var(--charcoal);
+  border-color: var(--white);
+}
+
+@keyframes heroFadeIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero visual — connected nodes */
+.hero-visual {
+  position: relative;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: heroFadeIn 1s 0.6s forwards;
+}
+.hero-node {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(232, 97, 44, 0.12);
+  border: 1.5px solid rgba(232, 97, 44, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-node::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--orange);
+  box-shadow: 0 0 16px rgba(232, 97, 44, 0.5);
+}
+.hero-node:nth-child(1) { top: 15%; left: 50%; }
+.hero-node:nth-child(2) { top: 35%; left: 22%; }
+.hero-node:nth-child(3) { top: 35%; left: 78%; }
+.hero-node:nth-child(4) { top: 58%; left: 38%; }
+.hero-node:nth-child(5) { top: 58%; left: 62%; }
+.hero-node:nth-child(6) { top: 80%; left: 50%; }
+.hero-line {
+  position: absolute;
+  height: 1.5px;
+  background: linear-gradient(90deg, rgba(232,97,44,0.4), rgba(232,97,44,0.1));
+  transform-origin: left center;
+}
+.hero-hex {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.06;
+}
+
+
+/* ===== ABOUT ===== */
+.about { background: var(--cream); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.stat-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 28px 24px;
+  border-left: 3px solid var(--orange);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 42px;
+  color: var(--charcoal);
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+.stat-label {
+  font-size: 14px;
+  color: var(--grey);
+  line-height: 1.4;
+}
+.stat-sub {
+  font-size: 12px;
+  color: var(--grey);
+  opacity: 0.7;
+  margin-top: 2px;
+}
+.about-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 44px);
+  color: var(--charcoal);
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+.about-content p {
+  color: var(--charcoal);
+  font-size: 17px;
+  margin-bottom: 28px;
+  line-height: 1.7;
+}
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.about-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  color: var(--charcoal);
+  line-height: 1.5;
+}
+.about-list li::before {
+  content: '✓';
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: var(--orange-light);
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 13px;
+  margin-top: 1px;
+}
+
+/* ===== SERVICES — PACKAGES ===== */
+.services { background: var(--navy); color: var(--white); }
+.services h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 12px;
+}
+.services-intro {
+  font-size: 17px;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 56px;
+  max-width: 560px;
+}
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.package-card {
+  background: var(--mid);
+  border-radius: 16px;
+  padding: 36px 32px;
+  border-top: 3px solid var(--orange);
+  transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), box-shadow 0.35s;
+  display: flex;
+  flex-direction: column;
+}
+.package-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(232, 97, 44, 0.15);
+}
+.package-badge {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 12px;
+}
+.package-name {
+  font-family: var(--font-display);
+  font-size: 26px;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.package-price {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--orange);
+  margin-bottom: 14px;
+}
+.package-desc {
+  font-size: 15px;
+  color: rgba(255,255,255,0.72);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.package-examples {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.package-examples li {
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.5;
+}
+.package-examples li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--orange);
+  opacity: 0.6;
+}
+.package-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--orange);
+  transition: gap 0.25s;
+}
+.package-link:hover { gap: 12px; }
+
+/* ===== TRAINING ===== */
+.training { background: var(--cream); }
+.training h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  color: var(--charcoal);
+  margin-bottom: 12px;
+}
+.training-intro {
+  font-size: 17px;
+  color: var(--grey);
+  margin-bottom: 48px;
+  max-width: 600px;
+}
+.training-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+.training-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.training-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+.training-card-header {
+  background: #0D2B1A;
+  padding: 28px 28px 24px;
+  color: var(--white);
+}
+.training-card-header .package-badge { color: #5AE88A; }
+.training-card-header h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.training-card-header .training-price {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: #5AE88A;
+}
+.training-card-body {
+  padding: 28px;
+}
+.training-card-body p {
+  font-size: 15px;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.training-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.training-tag {
+  padding: 6px 14px;
+  border-radius: 100px;
+  background: var(--orange-light);
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Accordion */
+.accordion-section h3 {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3vw, 32px);
+  color: var(--charcoal);
+  margin-bottom: 28px;
+}
+.accordion-item {
+  background: var(--white);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  border: 1px solid var(--border);
+}
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--charcoal);
+  text-align: left;
+  transition: color 0.2s;
+}
+.accordion-trigger:hover { color: var(--orange); }
+.accordion-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  position: relative;
+  transition: transform 0.3s;
+}
+.accordion-icon::before,
+.accordion-icon::after {
+  content: '';
+  position: absolute;
+  background: var(--orange);
+  border-radius: 2px;
+}
+.accordion-icon::before {
+  width: 14px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.accordion-icon::after {
+  width: 2px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s;
+}
+.accordion-item.open .accordion-icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.accordion-body-inner {
+  padding: 0 24px 24px;
+}
+.accordion-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.accordion-meta span {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--grey);
+  padding: 4px 10px;
+  background: var(--cream);
+  border-radius: 6px;
+}
+.accordion-modules {
+  margin-bottom: 16px;
+}
+.accordion-modules h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.accordion-modules li {
+  font-size: 14px;
+  color: var(--charcoal);
+  padding: 5px 0;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.5;
+}
+.accordion-modules li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--orange);
+  opacity: 0.5;
+}
+.accordion-outcomes h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.accordion-outcomes li {
+  font-size: 14px;
+  color: var(--grey);
+  padding: 4px 0;
+  padding-left: 16px;
+  position: relative;
+}
+.accordion-outcomes li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+  font-size: 13px;
+}
+
+/* ===== HOW IT WORKS ===== */
+.process { background: var(--navy); color: var(--white); }
+.process h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 12px;
+}
+.process-subtitle {
+  font-size: 17px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 64px;
+  max-width: 560px;
+}
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  position: relative;
+}
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 44px;
+  left: calc(16.667% + 32px);
+  right: calc(16.667% + 32px);
+  height: 2px;
+  background: linear-gradient(90deg, var(--orange), rgba(232,97,44,0.2));
+  z-index: 1;
+}
+.process-step {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.step-number {
+  font-family: var(--font-display);
+  font-size: 64px;
+  color: var(--orange);
+  line-height: 1;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+.step-number::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 3px;
+  background: var(--orange);
+  border-radius: 2px;
+  opacity: 0.4;
+}
+.process-step h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+.process-step p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.65;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* ===== WORKSHOPS ===== */
+.workshops { background: var(--cream); }
+.workshops h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  color: var(--charcoal);
+  margin-bottom: 12px;
+}
+.workshops-intro {
+  font-size: 17px;
+  color: var(--grey);
+  margin-bottom: 48px;
+  max-width: 640px;
+}
+.workshop-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.workshop-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 32px 28px;
+  border: 1px solid var(--border);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.workshop-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+.workshop-status {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 14px;
+}
+.workshop-card h3 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.workshop-card p {
+  font-size: 14px;
+  color: var(--grey);
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+.workshop-meta-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.workshop-meta-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--grey);
+  padding: 4px 10px;
+  background: var(--cream);
+  border-radius: 6px;
+}
+.workshop-register {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--orange);
+  transition: gap 0.25s;
+}
+.workshop-register:hover { gap: 12px; }
+
+/* ===== BLOG ===== */
+.blog { background: var(--navy); color: var(--white); }
+.blog h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 48px;
+}
+.blog-featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.blog-featured-visual {
+  background: var(--mid);
+  border-radius: 16px;
+  padding: 48px 40px;
+  border: 1px solid rgba(255,255,255,0.06);
+  position: relative;
+  overflow: hidden;
+}
+.blog-featured-visual::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(232,97,44,0.08), transparent 70%);
+}
+.blog-featured-visual .eyebrow { margin-bottom: 20px; position: relative; z-index: 1; }
+.blog-featured-visual h3 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  line-height: 1.25;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 16px;
+}
+.blog-featured-visual p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+.blog-content h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.blog-content p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.blog-content .blog-topics {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.blog-content .blog-topics li {
+  font-size: 15px;
+  color: rgba(255,255,255,0.55);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+.blog-content .blog-topics li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+}
+
+/* ===== FAQ ===== */
+.faq { background: var(--cream); }
+.faq h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  color: var(--charcoal);
+  margin-bottom: 12px;
+}
+.faq-intro {
+  font-size: 17px;
+  color: var(--grey);
+  margin-bottom: 48px;
+  max-width: 600px;
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.faq-item {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--charcoal);
+  text-align: left;
+  transition: color 0.2s;
+  gap: 16px;
+}
+.faq-question:hover { color: var(--orange); }
+.faq-question .accordion-icon { flex-shrink: 0; }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.faq-answer-inner {
+  padding: 0 24px 24px;
+  font-size: 15px;
+  color: var(--grey);
+  line-height: 1.7;
+}
+
+/* ===== ENQUIRY FORM ===== */
+.enquiry {
+  background: var(--navy);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.enquiry::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(ellipse at 80% 50%, rgba(232,97,44,0.06), transparent 70%);
+}
+.enquiry-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+  position: relative;
+  z-index: 2;
+}
+.enquiry h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 16px;
+}
+.enquiry-desc {
+  font-size: 17px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.enquiry-promise {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.enquiry-promise li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 15px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+}
+.enquiry-promise-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(232,97,44,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 1px;
+}
+.enquiry-form {
+  background: var(--mid);
+  border-radius: 20px;
+  padding: 40px 36px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 8px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 15px;
+  transition: border-color 0.25s, background 0.25s;
+  outline: none;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255,255,255,0.35);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--orange);
+  background: rgba(255,255,255,0.09);
+}
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='rgba(255,255,255,0.5)' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+.form-group select option { background: var(--mid); color: var(--white); }
+.form-group textarea { min-height: 120px; resize: vertical; }
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.form-submit {
+  width: 100%;
+  padding: 16px;
+  background: var(--orange);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 4px 16px rgba(232, 97, 44, 0.3);
+  margin-top: 8px;
+}
+.form-submit:hover {
+  background: var(--orange-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(232, 97, 44, 0.4);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #070F18;
+  color: rgba(255,255,255,0.5);
+  padding: 64px 0 32px;
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 16px;
+  max-width: 300px;
+}
+.footer-col h4 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--white);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.footer-col a {
+  display: block;
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--orange); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer-bottom p {
+  font-size: 13px;
+}
+.footer-ms-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border: 1px solid rgba(0, 120, 212, 0.3);
+  border-radius: 100px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--msblue);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-visual { display: none; }
+  .hero-content { text-align: center; max-width: 640px; margin: 0 auto; }
+  .hero-sub { margin-left: auto; margin-right: auto; }
+  .hero-ctas { justify-content: center; }
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .packages-grid { grid-template-columns: 1fr; }
+  .training-cards { grid-template-columns: 1fr; }
+  .blog-featured { grid-template-columns: 1fr; }
+  .enquiry-inner { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .section-padding { padding: 72px 0; }
+  .section-padding-lg { padding: 80px 0; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .nav-inner { position: relative; }
+  .nav-mobile-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 18px;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 7px;
+    margin-right: 16px;
+  }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .process-steps::before { display: none; }
+  .workshop-cards { grid-template-columns: 1fr; }
+  .faq-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 18px; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .hero-ctas { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+}
+
+/* Desktop-only helpers */
+@media (min-width: 769px) {
+  .nav-mobile-cta { display: none; }
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <div class="nav-wrapper">
-            <nav>
-                <div class="hamburger" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <ul class="nav-menu">
-                    <a href="https://forms.office.com/pages/responsepage.aspx?id=AyQ3_OpBTUKD2NmrzlmLGIjeyMRlGXpHkTu0ZAZweGJUM1hUSzlVRlhaVkVLSkxXNDQ1SU1PWlNOTi4u&route=shorturl">Price List</a></li>
-                    <li><a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled">Book a Call</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-        <section class="hero">
-        <img src="/logo.png" alt="Stand By Solutions Logo" />
-        <h1>Big Business Tech. Small Business Service.</h1>
-        <p>Professional email, AI-ready tools, Webpage Management, secure systems, and full support. No IT team? No problem. We offer fair & flexible pricing to suit <strong>your business</strong></p>
-    </section>
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav" id="nav" role="navigation" aria-label="Primary navigation">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo" aria-label="StandBy Solutions — home">
+   <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect width="36" height="36" rx="7" fill="#E8612C"/>
+  <circle cx="18" cy="19.5" r="9" stroke="white" stroke-width="2.4" stroke-dasharray="42.5 14" stroke-dashoffset="7" stroke-linecap="round"/>
+  <line x1="18" y1="8.5" x2="18" y2="14" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M20.8 16.8 C20.8 15.6 19.6 14.5 18 14.5 C16.2 14.5 14.7 15.6 14.7 17.2 C14.7 18.8 16.2 19.5 18 19.5 C19.8 19.5 21.5 20.2 21.5 21.8 C21.5 23.6 19.8 25 18 25 C16.4 25 15.2 24 15.2 22.8" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>
+      <span class="nav-logo-text">StandBy</span>
+    </a>
 
-  <section id="check" class="container mt-4">
-    <div class="check">
-    <h1>Want to hear our top tech tips for SMEs in Northern Ireland in 2026?</h1>
-    <p>Sign up below to receive <strong>our free guide</strong> & our price list</p>
-        <a href="https://forms.office.com/e/yAvzPLhrVp" target="_blank" class="btn-primary">Start Your Free Business Tech Checkup</a>
-       </div>
-    </section>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#training">Training</a>
+      <a href="#process">How It Works</a>
+      <a href="#enquiry" class="nav-cta">Get a Proposal</a>
+    </div>
+
+    <a href="#enquiry" class="nav-mobile-cta">Get a Proposal</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#training" class="mobile-nav-link">Training</a>
+    <a href="#process" class="mobile-nav-link">How It Works</a>
+    <a href="#enquiry" class="mobile-nav-link">Get a Proposal</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="hero">
+  <div class="hero-grid-pattern" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Microsoft Ecosystem Specialists · Northern Ireland</p>
+      <h1>Your business,<br>running smarter.</h1>
+      <p class="hero-sub">AI-powered automation and training built on Microsoft 365.<br>No generic IT. No fluff. Just solutions that actually work.</p>
+      <div class="hero-ctas">
+        <a href="#enquiry" class="btn-primary">Get a Free Proposal</a>
+        <a href="#services" class="btn-secondary">See Our Services</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg class="hero-hex" viewBox="0 0 200 200" fill="none">
+        <polygon points="100,10 185,55 185,145 100,190 15,145 15,55" stroke="rgba(232,97,44,0.5)" stroke-width="1" fill="none"/>
+        <polygon points="100,40 155,65 155,135 100,160 45,135 45,65" stroke="rgba(232,97,44,0.3)" stroke-width="0.8" fill="none"/>
+      </svg>
+      <div class="hero-node"></div>
+      <div class="hero-node"></div>
+      <div class="hero-node"></div>
+      <div class="hero-node"></div>
+      <div class="hero-node"></div>
+      <div class="hero-node"></div>
+      <!-- Connection lines rendered via SVG -->
+      <svg style="position:absolute;inset:0;width:100%;height:100%;z-index:0" viewBox="0 0 400 480">
+        <line x1="200" y1="96" x2="108" y2="180" stroke="rgba(232,97,44,0.2)" stroke-width="1.5"/>
+        <line x1="200" y1="96" x2="292" y2="180" stroke="rgba(232,97,44,0.2)" stroke-width="1.5"/>
+        <line x1="108" y1="180" x2="168" y2="290" stroke="rgba(232,97,44,0.15)" stroke-width="1.5"/>
+        <line x1="292" y1="180" x2="232" y2="290" stroke="rgba(232,97,44,0.15)" stroke-width="1.5"/>
+        <line x1="168" y1="290" x2="232" y2="290" stroke="rgba(232,97,44,0.2)" stroke-width="1.5"/>
+        <line x1="168" y1="290" x2="200" y2="396" stroke="rgba(232,97,44,0.12)" stroke-width="1.5"/>
+        <line x1="232" y1="290" x2="200" y2="396" stroke="rgba(232,97,44,0.12)" stroke-width="1.5"/>
+      </svg>
+    </div>
+  </div>
+
+</header>
+
+<!-- ===== ABOUT ===== -->
+<section class="about section-padding-lg" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="stats-grid fade-up">
     
-    <section id="features" class="container mt-4">
-        <div class="features">
-            <div class="feature-card">
-                <h3>Web & Email Identity</h3>
-                <p>Look the part online with a custom website and business-class email — fully hosted and managed by us.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Cloud Tools & Microsoft 365</h3>
-                <p>Access the full Microsoft 365 suite of apps including Teams, SharePoint and Copilot-ready tools to boost productivity.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Automation & Workflows</h3>
-                <p>Streamline your day with smart automation using Power Automate and custom Power Apps, with assistance from our consultancy partner.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Security & Compliance</h3>
-                <p>From device management with Intune to Microsoft Purview compliance tools — we keep your business secure.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Full-Service Support</h3>
-                <p>We don’t just fix — we train, onboard, and support you as your remote IT partner. Always just an email away.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Ongoing Training</h3>
-                <p>Regular check-ins and workshops ensure your team stays confident using new tools — and we’re always here when you need us.</p>
-            </div>
+        <div class="stat-card stagger-2">
+          <div class="stat-number">48hrs</div>
+          <div class="stat-label">Draft Proposal Turnaround</div>
         </div>
-    </section>
-<!--
-<section class="container mt-4" id="pricing">
-  <h2 class="section-title">
-    Simple Pricing That Grows With You
-    <p class="additional-cost">(1–10 users)</p>
-  </h2>
-
-  <div class="pricing-grid">
-    <div class="price-card">
-      <h3>Essentials</h3>
-      <p class="price">£49/month</p>
-      <p class="setup-fee">£299 Set up fee (+£49 per additional user)</p>
-      <ul>
-        <li>Business email setup <p>(e.g. you@yourbiz.com)</p></li>
-        <li>Domain management + basic website <p>(3–4 sections)</p></li>
-        <li>Microsoft 365 Business Basic <p>(Web Browser apps only)</p></li>
-        <li>Baseline security features</li>
-        <li>Onboarding training</li>
-        <li>M365 Support <p>(Latest Response: 3 working days)</p></li>
-      </ul>
-      <p class="additional-cost">£25 Additional cost per user/month.</p>
-      <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" class="btn" target="_blank">Book a Call</a>
-    </div>
-
-    <div class="price-card">
-      <h3>Professional</h3>
-      <p class="price">£79/month</p>
-      <p class="setup-fee">£950 Set up fee (+£79 per additional user)</p>
-      <ul>
-        <li>Everything in Essentials, plus:</li>
-        <li>Microsoft 365 Business Premium <p>(All M365 Apps for Desktop)</p></li>
-        <li>Data protection <p>(Sensitivity Labels & DLP)</p></li>
-        <li>SharePoint & OneDrive setup</li>
-        <li>Continuous Training <p>"Lunch N Learn" sessions</p></li>
-        <li>M365 Support <p>(Latest Response: 2 working days)</p></li>
-        
-      </ul>
-      <p class="additional-cost">£35 Additional cost per user/month.</p>
-      <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" class="btn" target="_blank">Book a Call</a>
-    </div>
-
-    <div class="price-card">
-      <h3>Premium</h3>
-      <p class="price">£119/month</p>
-      <p class="setup-fee">£1499 Set up fee (+£119 per additional user)</p>
-      <ul>
-        <li>Everything in Professional, plus:</li>
-        <li>Custom App Support</li>
-        <li>Automation support</li>
-        <li>Personalised training sessions</li>
-        <li>Device management <p>Intune</p></li>
-        <li>Proactive compliance <p>(Advanced Purview)</p></li>
-        <li>M365 Support <p>(Same Day Response)</p></li>
-      </ul>
-      <p class="additional-cost">£55 Additional cost per user/month.</p>
-      <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" class="btn" target="_blank">Book a Call</a>
+        <div class="stat-card stagger-3">
+          <div class="stat-number">£0</div>
+          <div class="stat-label">Hourly Billing</div>
+          <div class="stat-sub">Fixed-price only</div>
+        </div>
+        <div class="stat-card stagger-4">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Northern Ireland Based</div>
+        </div>
+      </div>
+      <div class="about-content fade-up stagger-2">
+        <p class="eyebrow">About StandBy Solutions</p>
+        <h2>We don't do general IT.</h2>
+        <p>StandBy Solutions delivers automation and training to empower businesses in Northern Ireland. We design and build AI-powered automation systems on Microsoft 365 — and train your people to use them confidently. If you need someone to fix your printer or upgrade your PCs, we're not the right fit. If you need your business to stop drowning in manual processes and start running on intelligent automation, or you want to make the most out of your Microsoft License, let's talk.</p>
+        <ul class="about-list" role="list">
+          <li>Power Automate flows and business process automation</li>
+          <li>Copilot Studio AI agents and chatbots</li>
+          <li>SharePoint and Microsoft 365 solutions</li>
+          <li>Instructor-led AI and Modern Work training</li>
+          <li>Azure OpenAI and Claude AI integrations</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-  -->
+<!-- ===== SERVICES — PACKAGES ===== -->
+<section class="services section-padding-lg" id="services">
+  <div class="container">
+    <p class="eyebrow fade-up">Fixed-price. No hourly billing. Scoped and delivered.</p>
+    <h2 class="fade-up stagger-1">Project Packages</h2>
+    <p class="services-intro fade-up stagger-2">Every project is scoped upfront with a fixed price. No surprises, no timesheets, no scope creep. You know exactly what you're getting and what it costs.</p>
+    <div class="packages-grid">
 
-    <section class="cta-sme container mt-4" id="support">
-        <h2 class="section-title">Grow. Secure. Automate. Stand By.</h2>
-        <div class="features">
-            <div class="feature-card">
-                <h3>Microsoft Partner Expertise</h3>
-                <p>Leverage our CSP and Managed Partner status to get enterprise-grade features and pricing — made simple for small businesses.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Scale With Confidence</h3>
-                <p>From solopreneurs to growing teams — we help you scale securely, with smart automation and process refinement every step of the way.</p>
-            </div>
+      <div class="package-card fade-up stagger-1">
+        <div class="package-badge">Ready</div>
+        <div class="package-name">Quick Win Project</div>
+        <div class="package-price">£1,500 – £3,500</div>
+        <p class="package-desc">A focused build that solves one specific problem. Delivered in 2–3 weeks.</p>
+        <ul class="package-examples">
+          <li>Automated approval flows</li>
+          <li>Document generation</li>
+          <li>Form-to-SharePoint automation</li>
+        </ul>
+        <a href="#enquiry" class="package-link">Get a Proposal →</a>
+      </div>
+
+      <div class="package-card fade-up stagger-2">
+        <div class="package-badge">Transform</div>
+        <div class="package-name">Core Build</div>
+        <div class="package-price">£4,000 – £9,000</div>
+        <p class="package-desc">Multi-stage automations, AI-powered workflows, and Copilot Studio agents.</p>
+        <ul class="package-examples">
+          <li>End-to-end onboarding automation</li>
+          <li>AI document processing</li>
+          <li>Connected M365 solutions</li>
+        </ul>
+        <a href="#enquiry" class="package-link">Get a Proposal →</a>
+      </div>
+
+      <div class="package-card fade-up stagger-3">
+        <div class="package-badge">Elevate</div>
+        <div class="package-name">Full Solution</div>
+        <div class="package-price">From £10,000</div>
+        <p class="package-desc">A complete, phased engagement to fundamentally change how your business operates.</p>
+        <ul class="package-examples">
+          <li>Organisation-wide AI assistant</li>
+          <li>Azure OpenAI integrations</li>
+          <li>Full M365 modernisation</li>
+        </ul>
+        <a href="#enquiry" class="package-link">Get a Proposal →</a>
+      </div>
+
+      <div class="package-card fade-up stagger-4">
+        <div class="package-badge">Advance</div>
+        <div class="package-name">Monthly Retainer</div>
+        <div class="package-price">Monthly Retainer</div>
+        <p class="package-desc">A dedicated development partnership. Your systems keep improving every month.</p>
+        <ul class="package-examples">
+          <li>Continued automation development</li>
+          <li>New Copilot agents</li>
+          <li>Monthly roadmap review</li>
+        </ul>
+        <a href="#enquiry" class="package-link">Get a Proposal →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRAINING ===== -->
+<section class="training section-padding-lg" id="training">
+  <div class="container">
+    <p class="eyebrow fade-up">Instructor-led. Practical. Hands-on.</p>
+    <h2 class="fade-up stagger-1">Training</h2>
+    <p class="training-intro fade-up stagger-2">Every session is built around real workplace scenarios — not slides and theory. Participants leave with skills they can use the same day.</p>
+
+    <div class="training-cards">
+      <div class="training-card fade-up stagger-1">
+        <div class="training-card-header">
+          <div class="package-badge">Ignite</div>
+          <h3>Private Training</h3>
+          
         </div>
-        <h2 id="contact">Need something tailored?</h2>
-        <p>In collaboration with our consultancy partner, we offer custom IT, automation, and development services including migration of legacy email accounts, file shares, and outdated systems into a secure, modern cloud environment.</p>
-        <p><strong>Book a call</strong> and let’s design your solution together.</p>
-        <a href="https://outlook.office.com/book/Free30minutediscussion@standby-ni.com/?ismsaljsauthenabled" class="btn" target="_blank">Book a Call</a>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Stand By Solutions – All rights reserved.</p>
+        <div class="training-card-body">
+          <p>Tailored for your team. Delivered at your premises, our office, or hybrid. Content customised to your industry, your tools, your challenges.</p>
+          <!--
+          <div class="training-tags">
+            <span class="training-tag">Microsoft Copilot for Business</span>
+            <span class="training-tag">Power Automate for Non-Developers</span>
+            <span class="training-tag">AI in the Workplace</span>
+            <span class="training-tag">Claude &amp; AI Tools for Teams</span>
+            <span class="training-tag">SharePoint &amp; Teams</span>
+            <span class="training-tag">Power Platform Fundamentals</span>
+          </div>
+          -->
         </div>
-    </footer>
+      </div>
 
-    <div class="cookie-banner" id="cookie-banner">
-        <span>This site uses cookies to improve your experience. By using this site, you agree to our use of cookies.</span>
-        <button onclick="document.getElementById('cookie-banner').style.display='none'">Got it</button>
+      <div class="training-card fade-up stagger-2">
+        <div class="training-card-header">
+          <div class="package-badge">Spark</div>
+          <h3>Public Workshops</h3>
+        </div>
+        <div class="training-card-body">
+          <p>Open enrolment. Quarterly schedule. Capped at 10 delegates. Book individual seats — no need to fill a room.</p>
+          <!--
+          <p style="font-size:14px;color:var(--orange);font-weight:600;margin-top:8px;">Next session: Coming Soon — register your interest below</p>
+          <div class="training-tags" style="margin-top:16px;">
+            <span class="training-tag">Microsoft Copilot for Business</span>
+            <span class="training-tag">Power Automate for Non-Developers</span>
+            <span class="training-tag">AI in the Workplace</span>
+            <span class="training-tag">Claude &amp; AI Tools for Teams</span>
+          </div>
+          -->
+        </div>
+      </div>
     </div>
 
-    <script>
-        function toggleMenu() {
-            const navMenu = document.querySelector('.nav-menu');
-            navMenu.classList.toggle('active');
-        }
-    </script>
+    <!-- Course Syllabus Accordion — uncomment when courses are listed
+    <div class="accordion-section fade-up">
+      <h3>Course Syllabuses</h3>
+
+      <div class="accordion-item" id="course-copilot">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="course-copilot-body">
+          <span>Microsoft Copilot for Business</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-body" id="course-copilot-body" role="region">
+          <div class="accordion-body-inner">
+            <div class="accordion-meta">
+              <span>Half Day / Full Day</span>
+              <span>Beginner–Intermediate</span>
+              <span>Any Microsoft 365 user</span>
+            </div>
+            <div class="accordion-modules">
+              <h4>Modules</h4>
+              <ul>
+                <li>Copilot overview — what it is, where it lives, what it can do</li>
+                <li>Copilot in Outlook — email drafting, summarising, and triage</li>
+                <li>Copilot in Teams — meeting summaries, action items, and catch-ups</li>
+                <li>Copilot in Word — drafting, rewriting, and document creation</li>
+                <li>Copilot in Excel — analysis, formula generation, and data insights</li>
+                <li>Prompting skills — writing effective prompts for business results</li>
+                <li>Responsible AI — data boundaries, limitations, and when not to use it</li>
+                <li>Full Day: SharePoint &amp; OneNote hands-on lab</li>
+              </ul>
+            </div>
+            <div class="accordion-outcomes">
+              <h4>Learning Outcomes</h4>
+              <ul>
+                <li>Use Microsoft Copilot across M365 applications confidently</li>
+                <li>Write effective prompts that produce useful business outputs</li>
+                <li>Identify the top time-saving use cases for your role</li>
+                <li>Understand data boundaries and responsible use</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" id="course-pa">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="course-pa-body">
+          <span>Power Automate for Non-Developers</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-body" id="course-pa-body" role="region">
+          <div class="accordion-body-inner">
+            <div class="accordion-meta">
+              <span>Full Day</span>
+              <span>Beginner</span>
+              <span>Business users</span>
+            </div>
+            <div class="accordion-modules">
+              <h4>Modules</h4>
+              <ul>
+                <li>What can be automated — identifying processes ripe for automation</li>
+                <li>Power Automate fundamentals — the interface, triggers, and actions</li>
+                <li>Building your first flow — a live, hands-on walkthrough</li>
+                <li>Approval workflows — multi-stage approvals that actually work</li>
+                <li>Forms integration — collecting data and triggering automation</li>
+                <li>Conditions and logic — making flows smart with branching</li>
+                <li>Scheduling and recurrence — automating on a timetable</li>
+                <li>Troubleshooting — reading errors, fixing failures, and monitoring</li>
+              </ul>
+            </div>
+            <div class="accordion-outcomes">
+              <h4>Learning Outcomes</h4>
+              <ul>
+                <li>Build and deploy cloud flows independently</li>
+                <li>Automate approvals, notifications, and data capture</li>
+                <li>Use conditions and triggers to create intelligent automation</li>
+                <li>Monitor and maintain live flows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" id="course-ai">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="course-ai-body">
+          <span>AI in the Workplace — Practical Skills</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-body" id="course-ai-body" role="region">
+          <div class="accordion-body-inner">
+            <div class="accordion-meta">
+              <span>Half Day</span>
+              <span>Beginner</span>
+              <span>Any staff member</span>
+            </div>
+            <div class="accordion-modules">
+              <h4>Modules</h4>
+              <ul>
+                <li>AI demystified — what it is and what it isn't</li>
+                <li>Tools landscape — Copilot, ChatGPT, Claude, Gemini, and when to use each</li>
+                <li>Writing prompts — clear instructions that produce useful results</li>
+                <li>Practical use cases — real tasks you can automate or accelerate today</li>
+                <li>AI at work safely — data privacy, hallucinations, and responsible use</li>
+                <li>Hands-on lab — solve a real business problem with AI tools</li>
+                <li>Building an AI habit — making it stick beyond the training room</li>
+              </ul>
+            </div>
+            <div class="accordion-outcomes">
+              <h4>Learning Outcomes</h4>
+              <ul>
+                <li>Use AI tools productively and safely in your day-to-day role</li>
+                <li>Write effective prompts for different tasks and tools</li>
+                <li>Choose the right AI tool for the job</li>
+                <li>Understand organisational responsibilities around AI use</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" id="course-claude">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="course-claude-body">
+          <span>Claude and AI Tools for Teams</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-body" id="course-claude-body" role="region">
+          <div class="accordion-body-inner">
+            <div class="accordion-meta">
+              <span>Half Day</span>
+              <span>Beginner–Intermediate</span>
+              <span>Knowledge workers</span>
+            </div>
+            <div class="accordion-modules">
+              <h4>Modules</h4>
+              <ul>
+                <li>What is Claude — capabilities, strengths, and how it differs</li>
+                <li>Core capabilities — writing, analysis, coding, and reasoning</li>
+                <li>Advanced prompting — system prompts, personas, and structured outputs</li>
+                <li>Document tasks — summarising, extracting, and transforming text</li>
+                <li>Claude vs Copilot — when to use each, and how they complement</li>
+                <li>Claude in workflows — overview of API and integration possibilities</li>
+                <li>Team AI practices — governance, sharing, and consistency</li>
+              </ul>
+            </div>
+            <div class="accordion-outcomes">
+              <h4>Learning Outcomes</h4>
+              <ul>
+                <li>Use Claude confidently for writing, analysis, and documents</li>
+                <li>Write system-level prompts for consistent outputs</li>
+                <li>Decide when Claude or Copilot is the right tool</li>
+                <li>Establish team governance for AI use</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" id="course-sp">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="course-sp-body">
+          <span>SharePoint &amp; Teams for Smarter Collaboration</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-body" id="course-sp-body" role="region">
+          <div class="accordion-body-inner">
+            <div class="accordion-meta">
+              <span>Half Day / Full Day</span>
+              <span>Beginner–Intermediate</span>
+              <span>Teams and departments</span>
+            </div>
+            <div class="accordion-modules">
+              <h4>Modules</h4>
+              <ul>
+                <li>SharePoint fundamentals — sites, libraries, and structure</li>
+                <li>Document management — metadata, versioning, and organisation</li>
+                <li>Teams integration — how SharePoint and Teams work together</li>
+                <li>Building a team hub — a practical workspace for your department</li>
+                <li>Lists and automation — tracking work with SharePoint Lists</li>
+                <li>Sharing and permissions — controlling access without chaos</li>
+                <li>Full Day: Intranet and knowledge base hands-on lab</li>
+              </ul>
+            </div>
+            <div class="accordion-outcomes">
+              <h4>Learning Outcomes</h4>
+              <ul>
+                <li>Organise documents effectively in SharePoint</li>
+                <li>Use Teams and SharePoint together as a unified platform</li>
+                <li>Configure permissions that protect without frustrating</li>
+                <li>Build list-based processes for tracking and reporting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" id="course-pp">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="course-pp-body">
+          <span>Power Platform Fundamentals</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-body" id="course-pp-body" role="region">
+          <div class="accordion-body-inner">
+            <div class="accordion-meta">
+              <span>Full Day</span>
+              <span>Beginner</span>
+              <span>Aspiring citizen developers</span>
+            </div>
+            <div class="accordion-modules">
+              <h4>Modules</h4>
+              <ul>
+                <li>Platform overview — what each tool does and when to use it</li>
+                <li>Power Apps — build a canvas app from scratch</li>
+                <li>Power Automate — create a cloud flow end-to-end</li>
+                <li>SharePoint as a data source — tables, lists, and libraries</li>
+                <li>Power BI — build a dashboard from live data</li>
+                <li>Connected solution lab — link an app, a flow, and a report</li>
+                <li>Copilot in Power Platform — AI-assisted building</li>
+                <li>Next steps — governance, licensing, and where to go from here</li>
+              </ul>
+            </div>
+            <div class="accordion-outcomes">
+              <h4>Learning Outcomes</h4>
+              <ul>
+                <li>Understand each Power Platform tool's purpose and capabilities</li>
+                <li>Build a basic app, flow, and report</li>
+                <li>Connect solutions to SharePoint data sources</li>
+                <li>Identify solvable business problems in your organisation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="process section-padding-lg" id="process">
+  <div class="container">
+    <p class="eyebrow fade-up">From enquiry to delivery</p>
+    <h2 class="fade-up stagger-1">How It Works</h2>
+    <p class="process-subtitle fade-up stagger-2">Three steps. No jargon. No obligation until you're ready.</p>
+    <div class="process-steps">
+      <div class="process-step fade-up stagger-1">
+        <div class="step-number">1</div>
+        <h3>Tell us your challenge</h3>
+        <p>Complete our short enquiry form. Nine questions. Under five minutes. No technical knowledge required — just describe the problem in plain English.</p>
+      </div>
+      <div class="process-step fade-up stagger-2">
+        <div class="step-number">2</div>
+        <h3>Receive a draft proposal</h3>
+        <p>Within 48 hours, you'll receive a draft Statement of Work tailored to your business. Fixed-price, clearly scoped, and ready to review.</p>
+      </div>
+      <div class="process-step fade-up stagger-3">
+        <div class="step-number">3</div>
+        <h3>We build, you grow</h3>
+        <p>We deliver your solution and train your team. Then, if you want to keep moving, our ADVANCE retainer keeps your systems improving every month.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== UPCOMING WORKSHOPS — uncomment when dates confirmed =====
+<section class="workshops section-padding" id="workshops">
+  <div class="container">
+    <p class="eyebrow fade-up">Open enrolment sessions</p>
+    <h2 class="fade-up stagger-1">Upcoming SPARK Workshops</h2>
+    <p class="workshops-intro fade-up stagger-2">Our public workshops are open to anyone — book individual seats without needing to fill a room. All sessions are hands-on and capped at 10 delegates.</p>
+    <div class="workshop-cards">
+      <div class="workshop-card fade-up stagger-1">
+        <div class="workshop-status">Coming Soon</div>
+        <h3>Microsoft Copilot for Business</h3>
+        <p>A practical half-day workshop covering Copilot across Outlook, Teams, Word, and Excel. Perfect for teams preparing for or already using Microsoft Copilot.</p>
+        <div class="workshop-meta-row">
+          <span class="workshop-meta-tag">Half Day</span>
+          
+          <span class="workshop-meta-tag">Glengormley, Newtownabbey</span>
+        </div>
+        <a href="#enquiry" class="workshop-register">Register Interest →</a>
+      </div>
+      <div class="workshop-card fade-up stagger-2">
+        <div class="workshop-status">Coming Soon</div>
+        <h3>AI in the Workplace</h3>
+        <p>Hands-on AI skills for any role. Learn to use ChatGPT, Claude, Copilot and other AI tools productively and safely — no technical background needed.</p>
+        <div class="workshop-meta-row">
+          <span class="workshop-meta-tag">Half Day</span>
+          
+          <span class="workshop-meta-tag">Glengormley, Newtownabbey</span>
+        </div>
+        <a href="#enquiry" class="workshop-register">Register Interest →</a>
+      </div>
+      <div class="workshop-card fade-up stagger-3">
+        <div class="workshop-status">Coming Soon</div>
+        <h3>Power Automate for Non-Developers</h3>
+        <p>Build your first automation. A full-day workshop teaching business users how to automate approvals, notifications, and data processes — no coding required.</p>
+        <div class="workshop-meta-row">
+          <span class="workshop-meta-tag">Full Day</span>
+          
+          <span class="workshop-meta-tag">Glengormley, Newtownabbey</span>
+        </div>
+        <a href="#enquiry" class="workshop-register">Register Interest →</a>
+      </div>
+    </div>
+  </div>
+</section>
+===== -->
+
+<!-- ===== BLOG / INSIGHTS — uncomment when blog content ready =====
+<section class="blog section-padding-lg" id="blog">
+  <div class="container">
+    <p class="eyebrow fade-up">Insights</p>
+    <h2 class="fade-up stagger-1">From the Blog</h2>
+    <div class="blog-featured">
+      <div class="blog-featured-visual fade-up stagger-2">
+        <p class="eyebrow">Featured Article</p>
+        <h3>AI and Automation for Small Business — Your Questions Answered</h3>
+        <p>A plain-English guide to the most common questions we hear from SME owners and operations managers about Microsoft Copilot, Power Automate, AI safety, and getting started with business automation in Northern Ireland.</p>
+      </div>
+      <div class="blog-content fade-up stagger-3">
+        <h3>What's covered</h3>
+        <p>This is the article we wish existed when our clients first started asking about AI. It covers the real questions — not the marketing fluff — with honest, specific answers grounded in what we see every day working with small businesses across Northern Ireland.</p>
+        <ul class="blog-topics">
+          <li>Is Microsoft Copilot worth it for small business?</li>
+          <li>How much does business automation cost in the UK?</li>
+          <li>What can Power Automate do for my business?</li>
+          <li>Is my data safe with Microsoft Copilot?</li>
+          <li>Microsoft Copilot vs ChatGPT — which is right for my team?</li>
+          <li>Do I need to be technical to work with a consultant?</li>
+          <li>What is Copilot Studio and do I need it?</li>
+        </ul>
+        <a href="#faq" class="package-link" style="margin-top:28px;display:inline-flex;">Read the Full FAQ →</a>
+      </div>
+    </div>
+  </div>
+</section>
+===== -->
+
+<!-- ===== FAQ — uncomment when FAQ section ready =====
+<section class="faq section-padding-lg" id="faq">
+  <div class="container">
+    <p class="eyebrow fade-up">Common questions answered</p>
+    <h2 class="fade-up stagger-1">Frequently Asked Questions</h2>
+    <p class="faq-intro fade-up stagger-2">Honest, specific answers to the questions we hear most from SME owners, operations managers, and finance directors across Northern Ireland and the UK.</p>
+    <div class="faq-grid">
+
+      <div class="faq-item fade-up stagger-1">
+        <button class="faq-question" aria-expanded="false">
+          <span>What can Power Automate do for my business?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Power Automate connects your Microsoft 365 apps and automates repetitive tasks — approval workflows, document generation, data entry, email notifications, and invoice processing. Most SMEs save 5–15 hours per week by automating their three worst manual processes. It works with Outlook, SharePoint, Teams, Forms, Excel, and over 1,000 third-party connectors.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up stagger-2">
+        <button class="faq-question" aria-expanded="false">
+          <span>How much does business automation cost in the UK?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            At StandBy Solutions, fixed-price projects start at £1,500 for a focused quick-win automation. Most SMEs invest between £4,000 and £9,000 for a core automation build that delivers measurable ROI within 8–12 weeks. Larger transformation projects are scoped individually. We don't bill hourly — every project is scoped and priced upfront.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up stagger-1">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is Microsoft Copilot worth it for small business?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Microsoft Copilot is worth it if your team spends significant time drafting documents, summarising emails, building presentations, or analysing data in Excel. At £25 per user per month, it pays for itself if it saves each user more than one hour per week. The key is training — most businesses that see poor ROI from Copilot simply haven't trained their staff to use it properly. That's exactly what our IGNITE and SPARK training sessions address.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up stagger-2">
+        <button class="faq-question" aria-expanded="false">
+          <span>What is the difference between Power Automate and hiring a developer?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Power Automate is a low-code platform built into Microsoft 365. It lets you build automation without writing traditional code, and your team can maintain it after delivery. Hiring a developer to build custom software typically costs 3–10x more, takes longer, and creates a dependency on that developer for every change. Power Automate solutions stay inside your Microsoft tenant, are maintained through a visual interface, and benefit from Microsoft's ongoing updates.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up stagger-1">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is my data safe with Microsoft Copilot?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Yes. Microsoft Copilot runs inside your Microsoft 365 tenant and respects all existing permissions. It does not train on your data, does not share your data with other organisations, and is covered by Microsoft's enterprise data protection commitments. Copilot can only access files and information that the individual user already has permission to see. If your SharePoint permissions are properly configured, Copilot is as secure as the rest of your Microsoft 365 environment.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up stagger-2">
+        <button class="faq-question" aria-expanded="false">
+          <span>Microsoft Copilot vs ChatGPT — which should my business use?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Microsoft Copilot is embedded in the apps your team already uses — Outlook, Word, Excel, Teams, and SharePoint. It works with your business data securely inside your tenant. ChatGPT is a standalone tool that's powerful for general tasks but doesn't connect to your Microsoft 365 environment or respect your file permissions. For most SMEs already on Microsoft 365, Copilot is the better investment because it works where your people already work. Some businesses use both: Copilot for daily M365 work, ChatGPT or Claude for research and creative tasks.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up stagger-1">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do I need technical knowledge to work with StandBy Solutions?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            No. Most of our clients are operations managers, finance directors, or business owners — not IT professionals. You describe the problem in plain English, and we design the solution. Our enquiry form takes under five minutes and doesn't require any technical language. We translate your business challenges into Microsoft technology solutions and explain everything in terms you can act on.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up stagger-2">
+        <button class="faq-question" aria-expanded="false">
+          <span>What is Copilot Studio and do I need it?</span>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Copilot Studio is Microsoft's platform for building custom AI agents — chatbots and virtual assistants that can answer questions, look up information, and take actions inside your business systems. You might need it if your team repeatedly answers the same questions (HR policies, IT procedures, customer queries), if you want a 24/7 front-line assistant on your website or intranet, or if you want to automate multi-step processes that currently require human decision-making. StandBy Solutions designs and builds Copilot Studio agents as part of our TRANSFORM and ELEVATE project packages.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+===== -->
+
+<!-- ===== ENQUIRY FORM ===== -->
+<section class="enquiry section-padding-lg" id="enquiry">
+  <div class="container enquiry-inner">
+    <div>
+      <p class="eyebrow fade-up">Start here</p>
+      <h2 class="fade-up stagger-1">Get a Free Proposal</h2>
+      <p class="enquiry-desc fade-up stagger-2">Tell us what's slowing your business down. Nine questions, under five minutes. No technical knowledge needed — just describe the problem in plain English and we'll come back with a plan.</p>
+      <ul class="enquiry-promise fade-up stagger-3">
+        <li>
+          <span class="enquiry-promise-icon">✓</span>
+          <span>Draft Statement of Work within 48 hours</span>
+        </li>
+        <li>
+          <span class="enquiry-promise-icon">✓</span>
+          <span>Fixed-price — no hourly billing, no surprises</span>
+        </li>
+        <li>
+          <span class="enquiry-promise-icon">✓</span>
+          <span>No obligation — review the proposal and decide</span>
+        </li>
+        <li>
+          <span class="enquiry-promise-icon">✓</span>
+          <span>100% Northern Ireland based</span>
+        </li>
+      </ul>
+    </div>
+
+    <form class="enquiry-form fade-up stagger-3" action="#" method="POST" id="enquiryForm" aria-label="Enquiry form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Sarah McAllister" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="sarah@yourcompany.com" required autocomplete="email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="company">Company Name</label>
+          <input type="text" id="company" name="company" placeholder="Your company" autocomplete="organization">
+        </div>
+        <div class="form-group">
+          <label for="size">Team Size</label>
+          <select id="size" name="size">
+            <option value="" disabled selected>Select...</option>
+            <option value="1-5">1–5 staff</option>
+            <option value="6-20">6–20 staff</option>
+            <option value="21-50">21–50 staff</option>
+            <option value="51-100">51–100 staff</option>
+            <option value="100+">100+ staff</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="interest">What are you interested in?</label>
+        <select id="interest" name="interest">
+          <option value="" disabled selected>Select...</option>
+          <option value="automation">Automation / Power Automate project</option>
+          <option value="copilot-agent">Copilot Studio AI agent</option>
+          <option value="m365">Microsoft 365 solution</option>
+          <option value="training-private">Private training (IGNITE)</option>
+          <option value="training-public">Public workshop (SPARK)</option>
+          <option value="retainer">Monthly retainer (ADVANCE)</option>
+          <option value="not-sure">Not sure yet — just exploring</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="challenge">Describe your challenge</label>
+        <textarea id="challenge" name="challenge" placeholder="What's the manual process or problem you'd like to solve? No technical language needed — just describe it in your own words." rows="5"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="budget">Approximate budget</label>
+        <select id="budget" name="budget">
+          <option value="" disabled selected>Select...</option>
+          <option value="under-3k">Under £3,000</option>
+          <option value="3-10k">£3,000 – £10,000</option>
+          <option value="10-25k">£10,000+</option>
+          <option value="retainer">Monthly retainer</option>
+          <option value="not-sure">Not sure yet</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="timeline">How soon do you need this?</label>
+        <select id="timeline" name="timeline">
+          <option value="" disabled selected>Select...</option>
+          <option value="asap">As soon as possible</option>
+          <option value="1-month">Within 1 month</option>
+          <option value="quarter">This quarter</option>
+          <option value="exploring">Just exploring options</option>
+        </select>
+      </div>
+      <button type="submit" class="form-submit">Send My Enquiry</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" aria-label="StandBy Solutions — home">
+         
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect width="36" height="36" rx="7" fill="#E8612C"/>
+  <circle cx="18" cy="19.5" r="9" stroke="white" stroke-width="2.4" stroke-dasharray="42.5 14" stroke-dashoffset="7" stroke-linecap="round"/>
+  <line x1="18" y1="8.5" x2="18" y2="14" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M20.8 16.8 C20.8 15.6 19.6 14.5 18 14.5 C16.2 14.5 14.7 15.6 14.7 17.2 C14.7 18.8 16.2 19.5 18 19.5 C19.8 19.5 21.5 20.2 21.5 21.8 C21.5 23.6 19.8 25 18 25 C16.4 25 15.2 24 15.2 22.8" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>
+          <span class="nav-logo-text">StandBy</span>
+        </a>
+        <p>Microsoft ecosystem AI and automation. Based in Northern Ireland, serving SMEs across the UK. We design, build, and train — no generic IT, no fluff.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Project Packages</a>
+        <a href="#training">Training Courses</a>
+        <a href="#process">How It Works</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="#enquiry">Get a Proposal</a>
+        <a href="mailto:info@standby-ni.com">info@standby-ni.com</a>
+        <a href="https://standby-ni.com" target="_blank" rel="noopener">standby-ni.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Stand By Solutions Ltd. Northern Ireland. All rights reserved.</p>
+      <span class="footer-ms-badge" aria-label="Built on the Microsoft ecosystem">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="0" y="0" width="7.2" height="7.2" fill="#F25022"/><rect x="8.8" y="0" width="7.2" height="7.2" fill="#7FBA00"/><rect x="0" y="8.8" width="7.2" height="7.2" fill="#00A4EF"/><rect x="8.8" y="8.8" width="7.2" height="7.2" fill="#FFB900"/></svg>
+        Microsoft Ecosystem
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== NAV SCROLL EFFECT =====
+const nav = document.getElementById('nav');
+let lastScrollY = 0;
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 40) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+  lastScrollY = window.scrollY;
+}, { passive: true });
+
+// ===== HAMBURGER MENU =====
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+hamburger.addEventListener('click', () => {
+  const isOpen = hamburger.classList.toggle('active');
+  mobileNav.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', isOpen);
+});
+// Close mobile nav on link click
+document.querySelectorAll('.mobile-nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    mobileNav.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// ===== SCROLL-TRIGGERED FADE-UP =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// ===== ACCORDION =====
+document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    const item = trigger.closest('.accordion-item');
+    const body = item.querySelector('.accordion-body');
+    const isOpen = item.classList.contains('open');
+
+    // Close siblings
+    item.parentElement.querySelectorAll('.accordion-item.open').forEach(openItem => {
+      if (openItem !== item) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.accordion-body').style.maxHeight = '0';
+        openItem.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    if (isOpen) {
+      item.classList.remove('open');
+      body.style.maxHeight = '0';
+      trigger.setAttribute('aria-expanded', 'false');
+    } else {
+      item.classList.add('open');
+      body.style.maxHeight = body.scrollHeight + 'px';
+      trigger.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+// ===== FAQ ACCORDION =====
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+    const item = question.closest('.faq-item');
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = item.classList.contains('open');
+
+    if (isOpen) {
+      item.classList.remove('open');
+      answer.style.maxHeight = '0';
+      question.setAttribute('aria-expanded', 'false');
+    } else {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+      question.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+// ===== FORM SUBMIT — POWER AUTOMATE HTTP TRIGGER =====
+// Replace this URL with your Power Automate "When a HTTP request is received" trigger URL
+const FLOW_URL = 'https://defaultfc37240341ea424d83d8d9abce598b.18.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/16dd09c582e14f64a9709fd40ddfef88/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AZXsIDGTPHcAiQofyDyp50f_Jc9H4B4XOddogoUkrsg';
+
+document.getElementById('enquiryForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('.form-submit');
+  const originalText = btn.textContent;
+
+  // Collect form data
+  const payload = {
+    name: form.name.value,
+    email: form.email.value,
+    company: form.company.value,
+    teamSize: form.size.value,
+    interest: form.interest.value,
+    challenge: form.challenge.value,
+    budget: form.budget.value,
+    timeline: form.timeline.value,
+    submittedAt: new Date().toISOString()
+  };
+
+  // Validate required fields
+  if (!payload.name || !payload.email) {
+    btn.textContent = 'Please fill in your name and email';
+    btn.style.background = '#C94E20';
+    setTimeout(() => { btn.textContent = originalText; btn.style.background = ''; }, 3000);
+    return;
+  }
+
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  try {
+    const response = await fetch(FLOW_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    if (response.ok) {
+      btn.textContent = '✓ Enquiry Sent — We\'ll be in touch within 48 hours';
+      btn.style.background = '#0D2B1A';
+      form.reset();
+    } else {
+      throw new Error('Flow returned ' + response.status);
+    }
+  } catch (err) {
+    console.error('Form submission error:', err);
+    btn.textContent = 'Something went wrong — please email us directly';
+    btn.style.background = '#C94E20';
+    setTimeout(() => { btn.textContent = originalText; btn.style.background = ''; btn.disabled = false; }, 5000);
+  }
+});
+</script>
+
 </body>
 </html>
-
